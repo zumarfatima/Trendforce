@@ -9,10 +9,10 @@ export default function NavBarIndex() {
   const { lang } = useTranslation();
   const pathname = usePathname();
   const links = [
-    { href: "#home", label: lang.header.home },
-    { href: "#services", label: lang.header.services },
-    { href: "#about-us", label: lang.header.aboutUs },
-    { href: "#faqs", label: lang.header.faqs },
+    { href: "/#home", label: lang.header.home },
+    { href: "/#services", label: lang.header.services },
+    { href: "/#about-us", label: lang.header.aboutUs },
+    { href: "/#faqs", label: lang.header.faqs },
   ];
 
   return (

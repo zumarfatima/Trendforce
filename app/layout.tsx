@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/common/header/navbar";
 import { TranslationProvider } from "@/context/translation-context";
 import Footer from "@/components/shared/footer";
+import CookieConsent from "@/components/CookieConsent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Toaster position="top-right" />
         <TranslationProvider>
           <Navbar />
+          <CookieConsent />
           {children}
           <Footer />
         </TranslationProvider>

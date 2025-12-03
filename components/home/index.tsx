@@ -11,7 +11,6 @@ const HomePage = () => {
   return (
     <>
       <div className="container mx-auto">
-        <CookieConsent />
         <HeroSection />
         <ServicesSection />
         <AboutUs />

@@ -42,13 +42,13 @@ const ServicesSection = () => {
   const { lang } = useTranslation() as { lang: ServicesSectionProps };
 
   return (
-    <div id="services" className="px-5 my-10">
+    <div id="services" className="px-5 my-10 scroll-mt-10">
       <MainHeading
         button={lang.servicesSection.servicesButton || "Services"}
         center={true}
         textWhite={false}
-        heading1={lang.servicesSection.heading1 || "What We "}
-        heading2={lang.servicesSection.heading2 || "Provide"}
+        heading1={lang.servicesSection.heading1}
+        heading2={lang.servicesSection.heading2}
         subheading={lang.servicesSection.subheading}
       />
 

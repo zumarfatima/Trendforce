@@ -23,14 +23,32 @@ export default function CookieConsent() {
   const [marketing, setMarketing] = useState(false);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     const saved = localStorage.getItem("cookie_consent");
-    if (!saved) return setShow(true);
+    const rejected = localStorage.getItem("cookie_consent_rejected"); // 👈 NEW CHECK
+
+    if (!saved && !rejected) {
+      // 👈 Show if NO consent AND NO rejection
+      setShow(true);
+      return;
+    }
+
+    if (rejected) {
+      // 👈 If rejected, do NOT show the modal immediately, but clear the flag for the next visit
+      // We close the modal but remove the rejection flag so the modal shows on the NEXT visit
+      localStorage.removeItem("cookie_consent_rejected");
+      setShow(false);
+      return;
+    }
 
     try {
-      const consent = JSON.parse(saved);
+      const consent = JSON.parse(saved as string);
       setEssential(consent.essential);
       setAnalytics(consent.analytics);
       setMarketing(consent.marketing);
+
+      setShow(false); // Consent saved, do not show
     } catch {
       setShow(true);
     }
@@ -44,6 +62,7 @@ export default function CookieConsent() {
   }, [show]);
 
   const handleAccept = () => {
+    // Keep this: Saving consent on acceptance
     localStorage.setItem(
       "cookie_consent",
       JSON.stringify({ essential: true, analytics, marketing })
@@ -52,10 +71,7 @@ export default function CookieConsent() {
   };
 
   const handleReject = () => {
-    localStorage.setItem(
-      "cookie_consent",
-      JSON.stringify({ essential: true, analytics: false, marketing: false })
-    );
+    localStorage.setItem("cookie_consent_rejected", "true");
     setShow(false);
   };
 
@@ -80,7 +96,7 @@ export default function CookieConsent() {
         <p className="text-gray-600 mt-2 text-[20px]">{t.description}</p>
 
         <a
-          href="/privacy"
+          href="/privacy-policy"
           className="text-red-600 font-semibold hover:underline mt-2 text-[20px] inline-block"
         >
           {t.learnMore}
@@ -167,7 +183,7 @@ function CookieToggle({
                 className="h-5 w-5"
               />
             </div>
-            <h3 className="font-bold text-gray-800">{title}</h3>
+            <h3 className="font-bold text-[24px] text-gray-800">{title}</h3>
           </div>
 
           <label
@@ -203,7 +219,7 @@ function CookieToggle({
           </label>
         </div>
 
-        <p className="text-gray-600 text-sm mt-2 text-[20px]">{description}</p>
+        <p className="text-gray-600  mt-2 text-[20px]">{description}</p>
       </div>
     </div>
   );
