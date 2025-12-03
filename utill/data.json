@@ -1,0 +1,46 @@
+{
+  "mainCards": [
+    {
+      "src": "/assets/home-images/Consultation.svg",
+      "heading": "Consultation",
+      "subheading": "Strategic business consulting to help your organization navigate complex challenges and achieve sustainable growth."
+    },
+    {
+      "src": "/assets/home-images/Commodity.svg",
+      "heading": "Commodity Deals",
+      "subheading": "Expert guidance and facilitation of commodity transactions, ensuring optimal value and risk management."
+    },
+    {
+      "src": "/assets/home-images/Digitalization.svg",
+      "heading": "Digitalization",
+      "subheading": "Transform your business with cutting-edge digital solutions that enhance efficiency and create new opportunities."
+    },
+    {
+      "src": "/assets/home-images/Tokenization.svg",
+      "heading": "Tokenization",
+      "subheading": "Leverage blockchain technology to tokenize assets, creating new value and liquidity in traditional markets."
+    },
+    {
+      "src": "/assets/home-images/Quantum.svg",
+      "heading": "Quantum Computing",
+      "subheading": "Explore quantum computing to solve complex problems beyond traditional limits."
+    },
+    {
+      "src": "/assets/home-images/Sustainable.svg",
+      "heading": "Sustainable Solutions",
+      "subheading": "Develop and implement sustainable business strategies that promote growth and positive impact."
+    }
+  ],
+  "aboutUs": [
+    {
+      "src": "/assets/about-us/mission.svg",
+      "heading": "Our Mission",
+      "subheading": "To bridge the gap between data and decision-making, guiding organizations toward impactful growth and future readiness."
+    },
+    {
+      "src": "/assets/about-us/vision.svg",
+      "heading": "Our Vision",
+      "subheading": "To be the global leader in trend-based consulting, empowering enterprises to make smarter, faster, and future-focused decisions."
+    }
+  ]
+}
