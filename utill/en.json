@@ -15,7 +15,7 @@
   },
   "servicesSection": {
     "heading1": "What We ",
-    "heading2": "Provide",
+    "heading2": "Offer",
     "subheading": "We provide innovative solutions across multiple domains to help businesses thrive in an evolving landscape.",
     "servicesButton": "Services"
   },
@@ -215,16 +215,16 @@
       {
         "title": "Quick Links",
         "links": [
-          { "label": "Home", "href": "/" },
-          { "label": "Services", "href": "/services" },
-          { "label": "About Us", "href": "/about-us" }
+          { "label": "Home", "href": "#home" },
+          { "label": "Services", "href": "#services" },
+          { "label": "About Us", "href": "#about-us" }
         ]
       },
       {
         "title": "Support",
         "links": [
-          { "label": "FAQs", "href": "/faqs" },
-          { "label": "Contact Us", "href": "/contact-us" },
+          { "label": "FAQs", "href": "/#faqs" },
+          { "label": "Contact Us", "href": "#contact-us" },
           { "label": "Privacy Policy", "href": "/privacy-policy" },
           { "label": "Terms & Conditions", "href": "/terms-and-conditions" },
           { "label": "Impressum", "href": "/impressum" }
@@ -246,7 +246,7 @@
           {
             "image": "/assets/home-images/location.svg",
             "label": "Westgate Center,3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198,USA",
-            "href": "/terms-and-condition"
+            "href": "/terms-and-conditions"
           }
         ]
       }
@@ -325,9 +325,9 @@
       },
       {
         "title": "11. Contact Us",
-        "desc": "If you have any questions or concerns regarding this Privacy Policy or your personal data, please contact us at:\n\n TrendForce GmbH",
-        "email": "Email: dennis@cundw.io",
-        "address": "Address: Warwitzstrasse 9, Salzburg 5023, Austria"
+        "desc": "If you have any questions or concerns regarding this Privacy Policy or your personal data, please contact us at:\n\n TrendForce",
+        "email": "Email: info@trendforceconsulting.com",
+        "address": "Address: Westgate Center,3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198,USA"
       }
     ]
   },
@@ -390,31 +390,31 @@
       },
       {
         "title": "11. Contact Us",
-        "desc": "If you have any questions or concerns regarding this Privacy Policy or your personal data, please contact us at:\n\n TrendForce GmbH",
-        "email": "Email: dennis@cundw.io",
-        "address": "Address: Warwitzstrasse 9, Salzburg 5023, Austria"
+        "desc": "If you have any questions or concerns regarding this Privacy Policy or your personal data, please contact us at:\n\n TrendForce",
+        "email": "Email: info@trendforceconsulting.com",
+        "address": "Westgate Center,3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198,USA"
       }
     ]
   },
   "legalNotice": {
     "title": "Legal Notice",
     "company": {
-      "name": "Dynamic Solution",
+      "name": "TrendForce",
       "registration": "Registered in the Commercial Register of the Canton of Zug, CHE-101.808.011"
     },
     "address": {
       "title": "Address:",
-      "line1": "Warwitzstrasse 9",
-      "line2": "Salzburg 5023, Austria"
+      "line1": "Westgate Center,",
+      "line2": "3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198,USA"
     },
     "vat": {
       "title": "VAT Identification Number:",
-      "number": "CHE-101.808.011"
+      "number": "TAX-Nr: 32-0635065"
     },
     "contact": {
       "title": "Contact:",
-      "phone": "Phone: +49 1515 0819731",
-      "email": "E-Mail: dennis@cundw.io"
+      "phone": "Phone: +421 904 577 873",
+      "email": "E-Mail: info@trendforceconsulting.com"
     }
   },
 

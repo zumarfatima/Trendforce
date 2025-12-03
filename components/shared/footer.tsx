@@ -146,7 +146,7 @@ const Footer = () => {
       <div className="container px-5 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] py-10 gap-10">
           <div className="flex flex-col gap-4 text-center lg:text-start items-center lg:items-start mb-4 lg:mb-0">
-            <Link href="/#home">
+            <Link href="#home">
               <Image
                 src="/assets/home-icon.svg"
                 alt="icon"

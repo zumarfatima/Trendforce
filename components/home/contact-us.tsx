@@ -60,7 +60,7 @@ const ContactUs = () => {
   };
 
   return (
-    <>
+    <div id="contact-us" className="scroll-mt-10">
       {/* Main Heading */}
       <div>
         <MainHeading
@@ -209,7 +209,7 @@ const ContactUs = () => {
           </h2>
 
           {/* Address */}
-          <div className="mb-6 flex gap-5">
+          <div className="mb-6 flex gap-3 md:gap-5">
             <Image
               src="/assets/home-images/location.svg"
               alt="map"
@@ -231,9 +231,9 @@ const ContactUs = () => {
           </div>
 
           {/* Email */}
-          <div className="mb-6 flex gap-5">
+          <div className="mb-6 flex gap-3 md:gap-5">
             <Image
-              src="/assets/home-images/globe.svg"
+              src="/assets/home-images/email.svg"
               alt="map"
               height={100}
               width={100}
@@ -250,7 +250,7 @@ const ContactUs = () => {
           </div>
 
           {/* Phone */}
-          <div className="mb-6 flex gap-5">
+          <div className="mb-6 flex gap-3 md:gap-5">
             <Image
               src="/assets/home-images/calling.svg"
               alt="map"
@@ -279,7 +279,7 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

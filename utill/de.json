@@ -15,7 +15,7 @@
   },
   "servicesSection": {
     "heading1": "Was Wir ",
-    "heading2": "Anbieten",
+    "heading2": "Angebot",
     "subheading": "Wir bieten innovative Lösungen in mehreren Bereichen, um Unternehmen erfolgreich zu machen.",
     "servicesButton": "Dienstleistungen"
   },
@@ -209,16 +209,16 @@
       {
         "title": "Schnellzugriffe",
         "links": [
-          { "label": "Startseite", "href": "/" },
-          { "label": "Dienstleistungen", "href": "/services" },
-          { "label": "Über uns", "href": "/about-us" }
+          { "label": "Startseite", "href": "/#home" },
+          { "label": "Dienstleistungen", "href": "/#services" },
+          { "label": "Über uns", "href": "/#about-us" }
         ]
       },
       {
         "title": "Support",
         "links": [
-          { "label": "FAQs", "href": "/faqs" },
-          { "label": "Kontakt", "href": "/contact-us" },
+          { "label": "FAQs", "href": "/#faqs" },
+          { "label": "Kontakt", "href": "/#contact-us" },
           { "label": "Datenschutz", "href": "/privacy-policy" },
           { "label": "Nutzungsbedingungen", "href": "/terms-and-conditions" },
           { "label": "Impressum", "href": "/impressum" }
@@ -240,7 +240,7 @@
           {
             "image": "/assets/home-images/location.svg",
             "label": "Westgate Center, 3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198, USA",
-            "href": "/terms-and-condition"
+            "href": "/terms-and-conditions"
           }
         ]
       }
@@ -393,22 +393,22 @@
   "legalNotice": {
     "title": "Impressum",
     "company": {
-      "name": "Dynamic Solution",
+      "name": "TrendForce",
       "registration": "Eingetragen im Handelsregister des Kantons Zug, CHE-101.808.011"
     },
     "address": {
-      "title": "Adresse:",
-      "line1": "Warwitzstrasse 9",
-      "line2": "Salzburg 5023, Österreich"
+      "title": "Addresse:",
+      "line1": "Westgate Center,",
+      "line2": "3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198,USA"
     },
     "vat": {
       "title": "Umsatzsteuer-Identifikationsnummer:",
-      "number": "CHE-101.808.011"
+      "number": "TAX-Nr: 32-0635065"
     },
     "contact": {
       "title": "Kontakt:",
-      "phone": "Telefon: +49 1515 0819731",
-      "email": "E-Mail: dennis@cundw.io"
+      "phone": "Telefon: +421 904 577 873",
+      "email": "E-Mail: info@trendforceconsulting.com"
     }
   },
   "cookieConsent": {

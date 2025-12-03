@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/context/translation-context";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
 const HeroSection = () => {
   const { lang } = useTranslation();
@@ -29,10 +30,16 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
-          <Button className="bg-linear-to-b from-red-secondary to-red-primary md:px-10 md:py-5 text-white rounded-lg font-medium cursor-pointer transition hover:bg-red-100">
+          <Button
+            onClick={() => redirect("/#services")}
+            className="bg-linear-to-b from-red-secondary to-red-primary md:px-10 md:py-5 text-white rounded-lg font-medium cursor-pointer transition hover:bg-red-100"
+          >
             {lang.heroSection.exploreServices}
           </Button>
-          <Button className="border border-gray-300 md:px-10 md:py-5 rounded-lg font-medium text-white bg-background hover:bg-gray-800 transition cursor-pointer">
+          <Button
+            onClick={() => redirect("/#contact-us")}
+            className="border border-gray-300 md:px-10 md:py-5 rounded-lg font-medium text-white bg-background hover:bg-gray-800 transition cursor-pointer"
+          >
             {lang.heroSection.contactUs}
           </Button>
         </div>
