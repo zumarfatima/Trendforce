@@ -17,8 +17,21 @@ const TermsAndConditionsSection = () => {
 
   // Scroll to selected TOC item
   const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setActiveSection(id);
+    const element = document.getElementById(id);
+    if (element) {
+      const navbarHeight = 120; // adjust if needed
+
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+
+      setActiveSection(id);
+    }
   };
 
   // Detect current active section on scroll
@@ -72,12 +85,13 @@ const TermsAndConditionsSection = () => {
   }));
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-10">
       <PrivacyHeader
         title={lang.terms.terms}
         highlight={lang.terms.conditions}
         subtitle={lang.terms.desc}
-        lastUpdated={lang.terms.date}
+        date2={lang.terms.date2}
+        date={lang.terms.date}
         highlightColor="#d62828"
       />
 

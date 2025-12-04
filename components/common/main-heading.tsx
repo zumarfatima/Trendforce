@@ -34,9 +34,10 @@ const MainHeading = ({
 
       {subheading && (
         <p
-          className={`text-[20px] text-[#575757] leading-8 ${
+          className={`text-[20px] text-gray-600 leading-8 ${
             center ? "text-center max-w-2xl px-2" : ""
-          }`}
+          }
+          ${textWhite ? "text-zinc-300" : ""}`}
         >
           {subheading}
         </p>

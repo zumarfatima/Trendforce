@@ -16,8 +16,8 @@ const MainCard = ({ src, heading, subheading }: MainCardProps) => {
       </div>
 
       {/* Content */}
-      <h1 className="font-bold text-center">{heading}</h1>
-      <p className="text-center mt-2">{subheading}</p>
+      <h1 className="font-bold text-center text-2xl">{heading}</h1>
+      <p className="text-center mt-2 text-[18px]">{subheading}</p>
     </div>
   );
 };

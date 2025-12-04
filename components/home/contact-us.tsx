@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import MainHeading from "../common/main-heading";
 import Image from "next/image";
@@ -23,6 +23,7 @@ const ContactUs = () => {
     handleSubmit,
     reset,
     formState: { errors, isSubmitting },
+    clearErrors,
   } = useForm<FormValues>();
 
   // API function to submit form
@@ -30,32 +31,31 @@ const ContactUs = () => {
     try {
       const response = await fetch("/api/contact-us", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.message || "Failed to submit form");
+        throw new Error(t.errors.serverError);
       }
 
-      const data = await response.json();
-      return data;
+      return await response.json();
     } catch (error: any) {
-      console.error("Contact form submission error:", error);
       throw error;
     }
   };
+  useEffect(() => {
+    clearErrors();
+  }, [t, clearErrors]);
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     try {
       await submitContactForm(data);
-      toast.success("Form submitted successfully!");
+      toast.success(t.errors.successError);
       reset();
-    } catch (err) {
-      console.error("Error submitting form:", err);
+    } catch (err: any) {
+      toast.error(err?.message || t.errors.serverError);
     }
   };
 
@@ -73,120 +73,145 @@ const ContactUs = () => {
         />
       </div>
 
-      <section className="py-12 px-5 flex flex-col lg:flex-row justify-center items-center gap-10">
+      <section className="py-12 flex flex-col lg:flex-row justify-center items-center gap-10">
         {/* LEFT — Contact Form */}
         <div className="w-full max-w-3xl">
-          <form className="space-y-3" onSubmit={handleSubmit(onSubmit)}>
-            {/* Name */}
-            <div className="relative">
+          <form className="space-y-5" onSubmit={handleSubmit(onSubmit)}>
+            <div className="relative ">
               <input
                 type="text"
-                placeholder=" "
-                {...register("name", {
-                  required: t.form.name + " is required",
-                })}
-                className={`peer w-full border rounded-lg px-4 pt-5 pb-2 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-red-500 ${
-                  errors.name ? "border-red-500" : "border-gray-300"
-                }`}
+                id="name-contactus"
+                {...register("name", { required: t.errors.nameRequired })}
+                placeholder={t.placeholders.name}
+                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-heading bg-transparent rounded-lg border border-[#E3DBD8] appearance-none focus:outline-none focus:ring-0 focus:border-primary peer placeholder-transparent focus:placeholder:text-gray-400"
               />
-              <label className="absolute left-4 top-2.5 text-gray-500 text-sm transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-red-600">
-                {t.form.name} <span className="text-red-500">*</span>
+
+              <label
+                htmlFor="name-contactus"
+                className="absolute bg-white mt-1 text-sm text-body duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-left bg-neutral-primary peer-focus:mt-0 px-2 peer-focus:px-2 peer-focus:text-fg-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:top-2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+              >
+                Name <span className="text-red-500 ">*</span>
               </label>
+
               {errors.name && (
-                <p className="text-red-500 text-sm mt-1">
-                  {errors.name.message}
+                <p className="">
+                  {errors.name && (
+                    <span className="text-red-500 text-sm">
+                      {t.errors.nameRequired}
+                    </span>
+                  )}
                 </p>
               )}
             </div>
 
-            {/* Email */}
-            <div className="relative">
+            <div className="relative ">
               <input
                 type="email"
-                placeholder=" "
+                id="email-contactus"
                 {...register("email", {
-                  required: t.form.email + " is required",
+                  required: t.errors.emailInvalid,
                   pattern: {
                     value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                    message: "Invalid email address",
+                    message: t.errors.emailInvalid,
                   },
                 })}
-                className={`peer w-full border rounded-lg px-4 pt-5 pb-2 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-red-500 ${
-                  errors.email ? "border-red-500" : "border-gray-300"
-                }`}
+                placeholder={t.placeholders.email}
+                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-heading bg-transparent rounded-lg border border-[#E3DBD8] appearance-none focus:outline-none focus:ring-0 focus:border-primary peer placeholder-transparent focus:placeholder:text-gray-400"
               />
-              <label className="absolute left-4 top-2.5 text-gray-500 text-sm transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-red-600">
-                {t.form.email} <span className="text-red-500">*</span>
+              <label
+                htmlFor="email-contactus"
+                className="absolute bg-white mt-1 peer-focus:mt-0 text-sm text-body duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-left bg-neutral-primary px-2 peer-focus:px-2 peer-focus:text-fg-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:top-2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+              >
+                Email <span className="text-red-500">*</span>
               </label>
+
               {errors.email && (
-                <p className="text-red-500 text-sm mt-1">
-                  {errors.email.message}
+                <p className="">
+                  {errors.email && (
+                    <span className="text-red-500 text-sm">
+                      {t.errors.emailRequired}
+                    </span>
+                  )}
                 </p>
               )}
             </div>
 
-            {/* Phone */}
-            <div className="relative">
+            <div className="relative ">
               <input
                 type="text"
-                placeholder=" "
-                {...register("phone", {
-                  required: t.form.phone + " is required",
-                })}
-                className={`peer w-full border rounded-lg px-4 pt-5 pb-2 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-red-500 ${
-                  errors.phone ? "border-red-500" : "border-gray-300"
-                }`}
+                id="phone-contactus"
+                {...register("phone", { required: t.errors.phoneRequired })}
+                placeholder={t.placeholders.phone}
+                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-heading bg-transparent rounded-lg border border-[#E3DBD8] appearance-none focus:outline-none focus:ring-0 focus:border-primary peer placeholder-transparent focus:placeholder:text-gray-400"
               />
-              <label className="absolute left-4 top-2.5 text-gray-500 text-sm transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-red-600">
-                {t.form.phone} <span className="text-red-500">*</span>
+
+              <label
+                htmlFor="phone-contactus"
+                className="absolute bg-white mt-1 peer-focus:mt-0 text-sm text-body duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-left bg-neutral-primary px-2 peer-focus:px-2 peer-focus:text-fg-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:top-2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+              >
+                Phone <span className="text-red-500">*</span>
               </label>
+
               {errors.phone && (
-                <p className="text-red-500 text-sm mt-1">
-                  {errors.phone.message}
+                <p className="">
+                  {errors.phone && (
+                    <span className="text-red-500 text-sm">
+                      {t.errors.phoneRequired}
+                    </span>
+                  )}
                 </p>
               )}
             </div>
 
-            {/* Subject */}
-            <div className="relative">
+            <div className="relative ">
               <input
                 type="text"
-                placeholder=" "
-                {...register("subject", {
-                  required: t.form.subject + " is required",
-                })}
-                className={`peer w-full border rounded-lg px-4 pt-5 pb-2 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-red-500 ${
-                  errors.subject ? "border-red-500" : "border-gray-300"
-                }`}
+                id="subject-contactus"
+                {...register("subject", { required: t.errors.subjectRequired })}
+                placeholder={t.placeholders.subject}
+                className="block px-2.5 pb-2.5  pt-4 w-full text-sm text-heading bg-transparent rounded-lg border border-[#E3DBD8] appearance-none focus:outline-none focus:ring-0 focus:border-primary peer placeholder-transparent focus:placeholder:text-gray-400"
               />
-              <label className="absolute left-4 top-2.5 text-gray-500 text-sm transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-red-600">
-                {t.form.subject} <span className="text-red-500">*</span>
+              <label
+                htmlFor="subject-contactus"
+                className="absolute bg-white mt-1 peer-focus:mt-0 text-sm text-body duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-left bg-neutral-primary px-2 peer-focus:px-2 peer-focus:text-fg-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:top-2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+              >
+                Subject <span className="text-red-500">*</span>
               </label>
+
               {errors.subject && (
-                <p className="text-red-500 text-sm mt-1">
-                  {errors.subject.message}
+                <p className="">
+                  {errors.subject && (
+                    <span className="text-red-500 text-sm">
+                      {t.errors.subjectRequired}
+                    </span>
+                  )}
                 </p>
               )}
             </div>
 
-            {/* Message */}
             <div className="relative">
               <textarea
+                id="message-contactus"
+                {...register("message", { required: t.errors.messageRequired })}
+                placeholder={t.placeholders.message}
                 rows={6}
-                placeholder=" "
-                {...register("message", {
-                  required: t.form.message + " is required",
-                })}
-                className={`peer w-full border rounded-lg px-4 pt-5 pb-2 placeholder-transparent resize-none focus:outline-none focus:ring-2 focus:ring-red-500 ${
-                  errors.message ? "border-red-500" : "border-gray-300"
-                }`}
-              ></textarea>
-              <label className="absolute left-4 top-2.5 text-gray-500 text-sm transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-red-600">
-                {t.form.message} <span className="text-red-500">*</span>
+                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-heading bg-transparent rounded-lg border border-[#E3DBD8] appearance-none focus:outline-none focus:ring-0 focus:border-primary peer placeholder-transparent focus:placeholder:text-gray-400"
+              />
+
+              <label
+                htmlFor="message-contactus"
+                className="absolute bg-white text-sm text-body duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-left bg-neutral-primary px-2 peer-focus:px-2 peer-focus:text-fg-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:top-2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+              >
+                Message <span className="text-red-500">*</span>
               </label>
+
               {errors.message && (
-                <p className="text-red-500 text-sm mt-1">
-                  {errors.message.message}
+                <p className="">
+                  {errors.message && (
+                    <span className="text-red-500 text-sm">
+                      {t.errors.messageRequired}
+                    </span>
+                  )}
                 </p>
               )}
             </div>
@@ -197,7 +222,7 @@ const ContactUs = () => {
               disabled={isSubmitting}
               className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-medium transition disabled:opacity-50"
             >
-              {isSubmitting ? "Submitting..." : t.form.submit}
+              {isSubmitting ? t.form.submitting : t.form.submit}
             </button>
           </form>
         </div>
@@ -233,7 +258,7 @@ const ContactUs = () => {
           {/* Email */}
           <div className="mb-6 flex gap-3 md:gap-5">
             <Image
-              src="/assets/home-images/email.svg"
+              src="/assets/home-images/email-filled.svg"
               alt="map"
               height={100}
               width={100}

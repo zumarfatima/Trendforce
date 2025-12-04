@@ -77,8 +77,21 @@ const PrivacyPolicySection = () => {
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setActiveSection(id);
+    const element = document.getElementById(id);
+    if (element) {
+      const navbarHeight = 120; // adjust if needed
+
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+
+      setActiveSection(id);
+    }
   };
 
   // 🧭 Function to handle scroll and update active section
@@ -137,12 +150,13 @@ const PrivacyPolicySection = () => {
   }));
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-10">
       <PrivacyHeader
         title={lang.privacy.privacy}
         highlight={lang.privacy.policy}
         subtitle={lang.privacy.desc}
-        lastUpdated={lang.privacy.date}
+        date2={lang.privacy.date2}
+        date={lang.privacy.date}
         highlightColor="#d62828"
       />
 

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import LanguageSelector from "../language-selector";
 import { useTranslation } from "@/context/translation-context";
+import { redirect } from "next/navigation";
 
 export default function HeaderMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +15,10 @@ export default function HeaderMenu() {
       <div className="flex items-center gap-3 relative">
         <div className="hidden md:flex items-center gap-2">
           <LanguageSelector variant="compact" />
-          <button className="bg-linear-to-b from-red-secondary to-red-primary text-white py-2 px-2 rounded-lg whitespace-nowrap cursor-pointer text-[16px] ">
+          <button
+            onClick={() => redirect("/#contact-us")}
+            className="bg-linear-to-b from-red-secondary to-red-primary text-white py-2 px-2 rounded-lg whitespace-nowrap cursor-pointer text-[16px] "
+          >
             {lang.header.getFreeConsultation}
           </button>
         </div>
@@ -40,16 +44,43 @@ export default function HeaderMenu() {
         }`}
       >
         <ul className="flex flex-col space-y-4 py-4 px-6 font-medium text-gray-800">
-          <li className="hover:text-foreground cursor-pointer">
+          <li
+            className="hover:text-foreground cursor-pointer"
+            onClick={() => {
+              setMenuOpen(false);
+              window.location.href = "/#home";
+            }}
+          >
             {lang.header.home}
           </li>
-          <li className="hover:text-foreground cursor-pointer">
+
+          <li
+            className="hover:text-foreground cursor-pointer"
+            onClick={() => {
+              setMenuOpen(false);
+              window.location.href = "/#services";
+            }}
+          >
             {lang.header.services}
           </li>
-          <li className="hover:text-foreground cursor-pointer">
+
+          <li
+            className="hover:text-foreground cursor-pointer"
+            onClick={() => {
+              setMenuOpen(false);
+              window.location.href = "/#about-us";
+            }}
+          >
             {lang.header.aboutUs}
           </li>
-          <li className="hover:text-foreground cursor-pointer">
+
+          <li
+            className="hover:text-foreground cursor-pointer"
+            onClick={() => {
+              setMenuOpen(false);
+              window.location.href = "/#faqs";
+            }}
+          >
             {lang.header.faqs}
           </li>
 
@@ -57,7 +88,13 @@ export default function HeaderMenu() {
 
           <div className="flex flex-col md:hidden gap-3">
             <LanguageSelector variant="compact" />
-            <button className="md:hidden bg-linear-to-b from-red-secondary to-red-primary text-white py-2 px-4 rounded-lg whitespace-nowrap cursor-pointer">
+            <button
+              onClick={() => {
+                setMenuOpen(false);
+                window.location.href = "/#contact-us";
+              }}
+              className="md:hidden bg-linear-to-b from-red-secondary to-red-primary text-white py-2 px-4 rounded-lg whitespace-nowrap cursor-pointer"
+            >
               {lang.header.getFreeConsultation}
             </button>
           </div>
