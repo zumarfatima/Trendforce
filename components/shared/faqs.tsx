@@ -48,13 +48,15 @@ const FAQs = ({
             >
               <button
                 className={`w-full px-2 md:px-6 py-4 text-left flex justify-between items-center transition-colors duration-300 cursor-pointer
-                  ${isOpen ? "bg-[#FFE3E699]" : "bg-gray-50"}
+                  ${isOpen ? "bg-[#FFE3E699] " : "bg-gray-50"}
                 `}
                 onClick={() => toggleFAQ(index)}
               >
                 <span
-                  className={`text-[16px] md:text-xl font-medium ${
-                    isOpen ? "text-black font-semibold" : "text-gray-900"
+                  className={`text-[16px] md:text-xl  ${
+                    isOpen
+                      ? "text-black font-bold" // Extra bold for open
+                      : "text-gray-900 font-semibold" // normal for closed
                   }`}
                 >
                   {item.question}
@@ -77,7 +79,7 @@ const FAQs = ({
                   opacity: isOpen ? 1 : 0,
                 }}
               >
-                <div className="px-5 py-2 text-gray-700 text-[14px] leading-relaxed">
+                <div className="px-5 py-2 text-gray-700 text-[16px] leading-relaxed">
                   {item.answer}
                 </div>
               </div>

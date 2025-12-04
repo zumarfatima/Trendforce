@@ -9,7 +9,7 @@ const LegalNoticePage = () => {
   const { lang } = useTranslation();
 
   return (
-    <div className="container mx-auto p-8 space-y-10">
+    <div className="container mx-auto p-8 space-y-10 mt-15">
       <h1 className="text-6xl font-extrabold mb-6">{lang.legalNotice.title}</h1>
 
       <section className="mb-6">
@@ -30,10 +30,8 @@ const LegalNoticePage = () => {
       <section className="mb-6">
         <h3 className="text-2xl font-bold mb-2">
           {lang.legalNotice.vat.title}{" "}
-          <span className="font-bold text-xl">
-            {lang.legalNotice.vat.number}
-          </span>
         </h3>
+        <h3 className=" text-xl">{lang.legalNotice.vat.number}</h3>
       </section>
 
       <section className="mb-6">

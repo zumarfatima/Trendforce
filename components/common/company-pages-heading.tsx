@@ -4,7 +4,8 @@ interface HeaderProps {
   title: string;
   highlight: string;
   subtitle?: string;
-  lastUpdated?: string;
+  date?: string;
+  date2: string;
   highlightColor?: string; // optional dynamic color
 }
 
@@ -12,7 +13,8 @@ export default function PrivacyHeader({
   title,
   highlight,
   subtitle,
-  lastUpdated,
+  date2,
+  date,
   highlightColor = "#d62828", // default red
 }: HeaderProps) {
   return (
@@ -29,12 +31,10 @@ export default function PrivacyHeader({
 
       <p className="mt-5 text-gray-600 text-[20px]">{subtitle}</p>
 
-      {lastUpdated && (
-        <p className="mt-5 text-gray-800 font-bold text-[20px] ">
-          Last Updated:{" "}
-          <span className="font-normal text-gray-800">{lastUpdated}</span>
-        </p>
-      )}
+      <p className="mt-5 text-gray-800 font-bold text-[20px] ">
+        <span>{date2}</span>
+        <span className="font-normal text-gray-800">{date}</span>
+      </p>
     </div>
   );
 }

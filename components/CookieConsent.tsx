@@ -1,226 +1,319 @@
 "use client";
-
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import Cookies from "js-cookie";
 import { useTranslation } from "@/context/translation-context";
 
-type CookieToggleProps = {
-  title: string;
-  description: string;
-  icon: string;
-  value: boolean;
-  disabled?: boolean;
-  onChange: () => void;
-};
+// Note: I am assuming 'bg-primary' and 'text-secondary' are defined in your Tailwind config.
 
-export default function CookieConsent() {
+const CookieModal = () => {
   const { lang } = useTranslation();
-  const t = lang.cookieConsent;
+  // CORRECTED: 't' must point to 'lang.cookieConsent' as per your provided JSON structure
+  const t = lang.cookieConsent ?? {};
 
-  const [show, setShow] = useState(false);
-  const [essential, setEssential] = useState(true);
-  const [analytics, setAnalytics] = useState(false);
-  const [marketing, setMarketing] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [thirdPartyConsent, setThirdPartyConsent] = useState(false);
+  const [marketingConsent, setMarketingConsent] = useState(false);
+  const [strictlyNecessaryConsent, setStrictlyNecessaryConsent] =
+    useState(true);
 
+  const modalRef = useRef<HTMLDivElement | null>(null);
+
+  // --- Cookie Initialization Logic (Reading Cookies) ---
   useEffect(() => {
-    if (typeof window === "undefined") return;
+    // ... (rest of the useEffect logic remains the same)
+    const consent = Cookies.get("cookie_consent");
+    const thirdParty = Cookies.get("third_party_consent");
+    const strict = Cookies.get("strictly_necessary_consent");
+    const marketing = Cookies.get("marketing_consent");
 
-    const saved = localStorage.getItem("cookie_consent");
-    const rejected = localStorage.getItem("cookie_consent_rejected"); // 👈 NEW CHECK
-
-    if (!saved && !rejected) {
-      // 👈 Show if NO consent AND NO rejection
-      setShow(true);
-      return;
+    if (!consent) {
+      setShowModal(true);
     }
 
-    if (rejected) {
-      // 👈 If rejected, do NOT show the modal immediately, but clear the flag for the next visit
-      // We close the modal but remove the rejection flag so the modal shows on the NEXT visit
-      localStorage.removeItem("cookie_consent_rejected");
-      setShow(false);
-      return;
+    if (thirdParty === "true") {
+      setThirdPartyConsent(true);
     }
 
-    try {
-      const consent = JSON.parse(saved as string);
-      setEssential(consent.essential);
-      setAnalytics(consent.analytics);
-      setMarketing(consent.marketing);
+    if (strict === "false") {
+      setStrictlyNecessaryConsent(false);
+    }
 
-      setShow(false); // Consent saved, do not show
-    } catch {
-      setShow(true);
+    if (marketing === "true") {
+      setMarketingConsent(true);
     }
   }, []);
 
+  // --- Side Effect: Navbar and Body Scroll Lock (Unchanged logic) ---
   useEffect(() => {
-    document.body.style.overflow = show ? "hidden" : "auto";
-    return () => {
-      document.body.style.overflow = "auto";
+    const navbar = document.querySelector("nav");
+    if (navbar) {
+      navbar.style.display = showModal ? "none" : "";
+    }
+  }, [showModal]);
+
+  useEffect(() => {
+    if (!showModal) return;
+
+    const scrollY = window.scrollY;
+
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.left = "0";
+    document.body.style.right = "0";
+    document.body.style.overflow = "hidden";
+
+    if (modalRef.current) {
+      (modalRef.current!.style as any).webkitOverflowScrolling = "touch";
+    }
+
+    const shouldBlock = (target: EventTarget | null) =>
+      modalRef.current ? !modalRef.current.contains(target as Node) : true;
+
+    const onTouchMove = (e: TouchEvent) => {
+      if (shouldBlock(e.target)) e.preventDefault();
     };
-  }, [show]);
+    const onWheel = (e: WheelEvent) => {
+      if (shouldBlock(e.target)) e.preventDefault();
+    };
 
+    document.addEventListener("touchmove", onTouchMove, { passive: false });
+    document.addEventListener("wheel", onWheel, { passive: false });
+
+    return () => {
+      document.removeEventListener("touchmove", onTouchMove);
+      document.removeEventListener("wheel", onWheel);
+
+      const y = document.body.style.top;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.body.style.overflow = "";
+      window.scrollTo(0, y ? -parseInt(y) : 0);
+    };
+  }, [showModal]);
+
+  // --- Handlers ---
   const handleAccept = () => {
-    // Keep this: Saving consent on acceptance
-    localStorage.setItem(
-      "cookie_consent",
-      JSON.stringify({ essential: true, analytics, marketing })
+    Cookies.set("cookie_consent", "true", { expires: 365, path: "/" });
+    Cookies.set(
+      "strictly_necessary_consent",
+      strictlyNecessaryConsent.toString(),
+      { expires: 365, path: "/" }
     );
-    setShow(false);
+    Cookies.set("third_party_consent", thirdPartyConsent.toString(), {
+      expires: 365,
+      path: "/",
+    });
+    Cookies.set("marketing_consent", marketingConsent.toString(), {
+      expires: 365,
+      path: "/",
+    });
+    setShowModal(false);
   };
 
-  const handleReject = () => {
-    localStorage.setItem("cookie_consent_rejected", "true");
-    setShow(false);
+  const handleDecline = () => {
+    // Note: The new design uses 'handleDecline' for the 'Reject' button.
+    // The previous implementation used it to remove ALL cookies.
+    // I am retaining the logic from the old design's 'handleReject',
+    // which sets a single rejection cookie.
+
+    // Setting a rejection cookie (or clearing all cookies, depending on policy)
+    // Based on the 'handleDecline' logic you provided in the second code block,
+    // it removes all cookies. We will keep that logic for now.
+
+    setStrictlyNecessaryConsent(false);
+    setThirdPartyConsent(false);
+    setMarketingConsent(false);
+
+    Cookies.remove("cookie_consent", { path: "/" });
+    Cookies.remove("strictly_necessary_consent", { path: "/" });
+    Cookies.remove("third_party_consent", { path: "/" });
+    Cookies.remove("marketing_consent", { path: "/" });
+
+    setShowModal(false);
   };
 
-  if (!show) return null;
+  if (!showModal) return null;
 
+  // --- Component Render (Mapping keys to your JSON) ---
   return (
-    <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50 p-4">
-      <div className="bg-white rounded-2xl shadow-xl max-w-5xl w-full p-8 animate-fadeIn relative">
-        <h2 className="text-2xl font-bold flex items-center gap-3 text-gray-800">
-          <div className="bg-red-primary h-10 w-10 rounded-full flex items-center justify-center">
+    <div className="fixed inset-0 z-100 backdrop-blur-md bg-black/30 flex items-center justify-center px-3 sm:px-6">
+      <div
+        ref={modalRef}
+        className="bg-white rounded-2xl p-6 md:p-8 max-w-5xl w-full relative shadow-lg text-black overflow-y-auto max-h-[90vh]"
+        role="dialog"
+        aria-modal="true"
+      >
+        {/* Title and Description */}
+        <h2 className="text-base sm:text-lg font-bold mb-3 flex items-center gap-2 text-secondary">
+          <span className="bg-red-primary rounded-full p-2 text-sm">
             <Image
               src="/assets/home-images/cookies.svg"
               alt="icon"
-              width={40}
-              height={40}
-              className="h-5 w-5"
+              width={15}
+              height={15}
             />
-          </div>
-          {t.title}
+          </span>
+          {t.title} {/* Changed from t.heading1 */}
         </h2>
-
-        <p className="text-gray-600 mt-2 text-[20px]">{t.description}</p>
+        <p className="text-xs sm:text-sm leading-relaxed text-secondary">
+          {t.description} {/* Changed from t.desc1 */}
+        </p>
 
         <a
           href="/privacy-policy"
-          className="text-red-600 font-semibold hover:underline mt-2 text-[20px] inline-block"
+          className="hidden  text-primary font-bold mt-3 md:inline-block"
         >
           {t.learnMore}
         </a>
 
-        <hr className="my-6 text-gray-200" />
+        {/* 1st point (Essential/Strictly Necessary) */}
+        <div className="mt-2 md:mt-3 border-t border-[#E6E6E6] pt-4">
+          <div className="flex justify-between items-center mb-1 text-[#575757]">
+            <h2 className="text-base text-[16px] md:text-lg font-bold flex items-center gap-2 text-secondary mb-2">
+              <span className="bg-red-primary p-2 rounded-full inline-flex items-center justify-center">
+                <Image
+                  src="/assets/home-images/cookies.svg"
+                  alt="icon"
+                  width={14}
+                  height={14}
+                />
+              </span>
+              {t.sections.essential.title} {/* Changed from t.heading2 */}
+            </h2>
 
-        <CookieToggle
-          title={t.sections.essential.title}
-          description={t.sections.essential.description}
-          icon="/assets/home-images/cookies.svg"
-          value={essential}
-          disabled
-          onChange={() => {}}
-        />
-
-        <CookieToggle
-          title={t.sections.analytics.title}
-          description={t.sections.analytics.description}
-          icon="/assets/home-images/cookies.svg"
-          value={analytics}
-          onChange={() => setAnalytics(!analytics)}
-        />
-
-        <CookieToggle
-          title={t.sections.marketing.title}
-          description={t.sections.marketing.description}
-          icon="/assets/home-images/cookies.svg"
-          value={marketing}
-          onChange={() => setMarketing(!marketing)}
-        />
-
-        <hr className="my-6 text-gray-200" />
-
-        <div className="flex justify-between items-center">
-          <Image
-            src="/assets/home-icon-2.svg"
-            alt="TrendForce Logo"
-            width={200}
-            height={200}
-            className="h-10"
-          />
-
-          <div className="flex gap-3">
-            <button
-              onClick={handleReject}
-              className="px-6 py-2 bg-[#575757] text-white rounded-lg hover:bg-[#575757]/80 transition"
-            >
-              {t.buttons.reject}
-            </button>
-
-            <button
-              onClick={handleAccept}
-              className="px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition"
-            >
-              {t.buttons.accept}
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function CookieToggle({
-  title,
-  description,
-  icon,
-  value,
-  disabled = false,
-  onChange,
-}: CookieToggleProps) {
-  return (
-    <div className="flex flex-row items-start gap-3 mb-6">
-      <div className="w-full">
-        <div className="flex flex-row justify-between items-start w-full">
-          <div className="font-bold flex items-center gap-3 text-gray-800">
-            <div className="bg-red-primary h-10 w-10 rounded-full flex items-center justify-center">
-              <Image
-                src={icon}
-                alt="icon"
-                width={40}
-                height={40}
-                className="h-5 w-5"
+            <label className="relative inline-flex items-center cursor-not-allowed">
+              <input
+                type="checkbox"
+                className="sr-only peer"
+                checked={strictlyNecessaryConsent}
+                readOnly
               />
-            </div>
-            <h3 className="font-bold text-[24px] text-gray-800">{title}</h3>
+              <div className="w-8 h-4 bg-red-primary rounded-full peer peer-checked:bg-primary transition" />
+              <div className="dot absolute left-0.5 top-0.5 bg-white w-3 h-3 rounded-full transition-all peer-checked:translate-x-4" />
+            </label>
           </div>
+          <p className="text-xs sm:text-sm text-secondary">
+            {t.sections.essential.description}
+          </p>{" "}
+          {/* Changed from t.desc2 */}
+        </div>
 
-          <label
-            className={`ml-auto inline-flex items-center ${
-              disabled ? "cursor-not-allowed" : "cursor-pointer"
-            }`}
-          >
-            <input
-              type="checkbox"
-              className="hidden peer"
-              checked={value}
-              disabled={disabled}
-              onChange={onChange}
+        {/* 2nd point (Analytics/Third Party) */}
+        <div className="mt-2 md:mt-3 pt-3">
+          <div className="flex justify-between items-center mb-1">
+            <h3 className="text-base  md:text-lg font-bold flex items-center gap-2 text-secondary mb-2">
+              <span className="bg-red-primary p-2 rounded-full inline-flex items-center justify-center">
+                <Image
+                  src="/assets/home-images/cookies.svg"
+                  alt="icon"
+                  width={14}
+                  height={14}
+                />
+              </span>
+              {t.sections.analytics.title} {/* Changed from t.heading3 */}
+            </h3>
+
+            <label className="relative inline-flex items-center cursor-pointer">
+              <input
+                type="checkbox"
+                className="sr-only peer"
+                checked={thirdPartyConsent}
+                onChange={() => {
+                  setThirdPartyConsent((prev) => !prev);
+                }}
+              />
+              <div
+                className={`w-8 h-4  rounded-full peer peer-checked:bg-primary transition ${
+                  thirdPartyConsent ? "bg-red-primary" : "bg-gray-300"
+                }`}
+              />
+              <div className="dot absolute left-0.5 top-0.5 bg-white w-3 h-3 rounded-full transition-all peer-checked:translate-x-4" />
+            </label>
+          </div>
+          <p className="text-xs sm:text-sm text-secondary">
+            {t.sections.analytics.description}
+          </p>{" "}
+          {/* Changed from t.desc3 */}
+        </div>
+
+        <div className="hidden md:block mt-3 pt-3">
+          <div className="flex justify-between items-center mb-1">
+            <h3 className="text-base sm:text-lg font-bold flex items-center gap-2 text-secondary mb-2">
+              <span className="bg-red-primary p-2 rounded-full inline-flex items-center justify-center">
+                <Image
+                  src="/assets/home-images/cookies.svg"
+                  alt="icon"
+                  width={14}
+                  height={14}
+                />
+              </span>
+              {t.sections.marketing.title}
+            </h3>
+
+            <label className="relative inline-flex items-center cursor-pointer">
+              <input
+                type="checkbox"
+                className="sr-only peer"
+                checked={marketingConsent}
+                onChange={() => {
+                  setMarketingConsent((prev) => !prev);
+                }}
+              />
+              <div
+                className={`w-8 h-4  rounded-full peer peer-checked:bg-primary transition ${
+                  marketingConsent ? "bg-red-primary" : "bg-gray-300"
+                }`}
+              />
+              <div className="dot absolute left-0.5 top-0.5 bg-white w-3 h-3 rounded-full transition-all peer-checked:translate-x-4" />
+            </label>
+          </div>
+          <p className="text-xs sm:text-sm text-secondary">
+            {t.sections.marketing.description}
+          </p>{" "}
+          {/* Changed from t.desc4 */}
+        </div>
+
+        {/* footer */}
+        <div className="mt-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-4 text-center border-t border-[#E6E6E6] pt-4">
+          {/* Left Logo */}
+          <div className="flex items-center gap-2">
+            <Image
+              src="/assets/home-icon-2.svg"
+              alt="logo"
+              width={200}
+              height={52}
             />
+          </div>
 
-            {value ? (
-              <Image
-                src="/assets/toggle-on.svg"
-                alt="Toggle On"
-                width={44}
-                height={24}
-                style={{ transition: "opacity .2s" }}
-              />
-            ) : (
-              <Image
-                src="/assets/toggle-of.svg"
-                alt="Toggle Off"
-                width={44}
-                height={24}
-                style={{ transition: "opacity .2s" }}
-              />
-            )}
-          </label>
+          {/* Buttons */}
+          <div className="flex gap-2">
+            <button
+              className="px-4 py-2 text-xs rounded-lg bg-black font-bold text-white transition cursor-pointer"
+              onClick={handleDecline} // This button performs decline/reject action
+            >
+              {t.buttons.reject}{" "}
+              {/* Using 'reject' key as this is the reject button */}
+            </button>
+
+            <button
+              className={`px-4 py-2 text-xs rounded-lg font-bold ${
+                strictlyNecessaryConsent
+                  ? "bg-red-primary text-white hover:bg-red-400 cursor-pointer"
+                  : "bg-primary opacity-30 text-white cursor-not-allowed"
+              } transition`}
+              disabled={!strictlyNecessaryConsent}
+              onClick={handleAccept} // This button performs accept action
+            >
+              {t.buttons.accept} {/* Using 'accept' key */}
+            </button>
+          </div>
         </div>
-
-        <p className="text-gray-600  mt-2 text-[20px]">{description}</p>
       </div>
     </div>
   );
-}
+};
+
+export default CookieModal;

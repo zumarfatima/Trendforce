@@ -9,7 +9,7 @@
   "heroSection": {
     "pioneeringTheFuture": "Die Zukunft Gestalten von",
     "business": "Geschäft",
-    "empoweringJourney": "Stärken Sie Ihre Reise zum globalen finanziellen Erfolg durch maßgeschneiderte und personalisierte Finanzberatung für jeden Kunden",
+    "empoweringJourney": "Stärken sie ihre reise zum globalen finanziellen erfolg durch maßgeschneiderte und personalisierte finanzberatung für jeden kunden",
     "exploreServices": "Unsere Dienstleistungen entdecken",
     "contactUs": "Kontaktieren Sie uns"
   },
@@ -81,62 +81,19 @@
       },
       {
         "title": "Maßgeschneiderte Strategien",
-        "description": "Jede Empfehlung basiert auf gründlichen Daten, Forschung und Modellierung."
+        "description": "Keine Lösungen von der Stange – wir entwickeln Programme, die auf Ihre Ziele und Ambitionen abgestimmt sind."
       },
       {
         "title": "Bewährte Ergebnisse",
-        "description": "Jede Empfehlung basiert auf gründlichen Daten, Forschung und Modellierung."
+        "description": "JMessbare Wirkung mit klaren KPIs – von Wachstum über Kosteneinsparung bis hin zu Optimierung."
       }
     ]
-  },
-  "product-section": {
-    "Our Premium Products": "Unsere Premiumprodukte",
-    "Complete security solutions for your cryptocurrency": "Umfassende Sicherheitslösungen für deine Kryptowährung",
-    "Omega Hardware Wallet": "Omega Hardware Wallet",
-    "Best Seller": "Bestseller",
-    "paragraph": "Bestätige Transaktionen auf einem sicheren Element und halte Schlüssel offline. Passt perfekt zum Omega Seed für langfristige Wiederherstellung.",
-    "Supports 1000+ cryptocurrencies": "Unterstützt über 1000 Kryptowährungen",
-    "Secure element chip protection": "Sicherer Element-Chip-Schutz",
-    "PIN & passphrase protection": "PIN- & Passphrasenschutz",
-    "OLED display for verification": "OLED-Display zur Verifizierung",
-    "price": "$149.99",
-    "VAT included": "MwSt. inklusive",
-    "In Stock": "Auf Lager",
-    "Buy Now": "Jetzt kaufen",
-    "Learn More": "Mehr erfahren",
-    "Physically secure your transactions with": "Sichere deine Transaktionen physisch mit",
-    "Omega crypto wallets": "Omega-Krypto-Wallets",
-    "Omega Seedphrase": "Omega Seedphrase",
-    "paragraph2": "Titanium-Wiederherstellungslösung für den langfristigen Schutz deiner geheimen Wiederherstellungsphrase – die ultimative Backup-Lösung für absolute Sicherheit.",
-    "Fire, water & corrosion resistant": "Feuer-, wasser- und korrosionsbeständig",
-    "Titanium durability — no ink to fade": "Titanhaltige Langlebigkeit – keine Tinte, die verblasst",
-    "Fully offline self-custody": "Vollständig offline – vollständige Selbstverwahrung",
-    "Compatible with standard BIP39 phrases": "Kompatibel mit Standard-BIP39-Phrasen",
-    "Free worldwide shipping": "Kostenloser weltweiter Versand"
-  },
-  "coins-section": {
-    "Thousands of supported coins and tokens": "Tausende unterstützte Coins und Tokens",
-    "Bitcoin, Ethereum, and 1000+ other cryptocurrencies supported": "Bitcoin, Ethereum und 1000+ weitere Kryptowährungen unterstützt",
-    "Why Choose Omega?": "Warum Omega wählen?",
-    "slogan": "Erweiterte Sicherheitsfunktionen für den modernen Krypto-Anleger",
-    "Military-Grade Security": "Sicherheit auf Militärniveau",
-    "description1": "Moderne Verschlüsselung und Secure-Element-Technologie schützen Ihre Assets vor jeglicher Bedrohung",
-    "Complete Offline Storage": "Vollständige Offline-Speicherung",
-    "description2": "Bewahren Sie Ihre privaten Schlüssel vollständig offline und fern von Hackern auf",
-    "Intuitive Interface": "Intuitive Benutzeroberfläche",
-    "description3": "Die intuitive Benutzeroberfläche macht die Verwaltung Ihrer Kryptowährungen einfach, sicher und stressfrei"
-  },
-  "recovery-section": {
-    "Omega Recover": "Omega Recover",
-    "Never lose access to your digital assets": "Verlieren Sie niemals den Zugang zu Ihren digitalen Assets",
-    "description": "Sichern Sie Ihre Ruhe mit Omega Recover. Stellen Sie den Zugriff auf Ihr Krypto-Wallet wieder her, falls Ihre Secret Recovery Phrase verloren, beschädigt oder unerreichbar ist",
-    "Learn More": "Mehr erfahren"
   },
   "faqs": {
     "button": "FAQs",
     "title1": "Häufig gestellte ",
     "title2": "Fragen",
-    "desc": "Alles, was Sie über TrendForce Consulting wissen müssen",
+    "desc": "Finden Sie Antworten auf häufig gestellte Fragen zu unseren Dienstleistungen und unserem Ansatz.",
     "items": [
       {
         "question": "Mit welchen Branchen arbeitet TrendForce Consulting?",
@@ -178,8 +135,27 @@
       "phone": "Telefonnummer",
       "subject": "Betreff",
       "message": "Nachricht",
-      "submit": "Nachricht senden"
+      "submit": "Nachricht senden",
+      "submitting": "Senden..."
     },
+    "errors": {
+      "nameRequired": "Bitte geben Sie Ihren Namen ein.",
+      "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "phoneRequired": "Bitte geben Sie Ihre Telefonnummer ein.",
+      "subjectRequired": "Bitte geben Sie einen Betreff ein.",
+      "messageRequired": "Bitte geben Sie eine Nachricht ein.",
+      "serverError": "Beim Senden des Formulars ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+      "successError": "Ihre Nachricht wurde erfolgreich gesendet."
+    },
+    "placeholders": {
+      "name": "Geben Sie Ihren Namen ein",
+      "email": "Geben Sie Ihre E-Mail ein",
+      "phone": "Geben Sie Ihre Telefonnummer ein",
+      "subject": "Betreff eingeben",
+      "message": "Schreiben Sie hier Ihre Nachricht..."
+    },
+
     "contactDetails": {
       "title": "Kontakt informationen:",
       "address": {
@@ -219,7 +195,7 @@
         "links": [
           { "label": "FAQs", "href": "/#faqs" },
           { "label": "Kontakt", "href": "/#contact-us" },
-          { "label": "Datenschutz", "href": "/privacy-policy" },
+          { "label": "Datenschutzrichtlinie", "href": "/privacy-policy" },
           { "label": "Nutzungsbedingungen", "href": "/terms-and-conditions" },
           { "label": "Impressum", "href": "/impressum" }
         ]
@@ -228,165 +204,158 @@
         "title": "Kontakt",
         "links": [
           {
-            "image": "/assets/home-images/email.svg",
+            "image": "/assets/home-images/email-icon.svg",
             "label": "info@trendforceconsulting.com",
-            "href": "#"
+            "href": "mailto:info@trendforceconsulting.com"
           },
           {
             "image": "/assets/home-images/calling.svg",
             "label": "+421 904 577 873",
-            "href": "#"
+            "href": "tel:+421904577873"
           },
           {
             "image": "/assets/home-images/location.svg",
             "label": "Westgate Center, 3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198, USA",
-            "href": "/terms-and-conditions"
+            "href": "https://maps.app.goo.gl/rPFHq42G4EThFFXe7"
           }
         ]
       }
     ],
     "copyright": "Copyright © 2022 TrendForce Consulting.",
-    "copyright2": "Alle Rechte vorbehalten | <a style='color:#BE1E2D' href='/terms-and-conditions'>Nutzungsbedingungen</a> | <a style='color:#BE1E2D' href='/privacy-policy'>Datenschutzrichtlinie</a>"
+    "copyright2": "Alle Rechte vorbehalten | <a style='color:#BE1E2D; text-decoration: underline;' href='/terms-and-conditions'>Nutzungsbedingungen</a> | <a style='color:#BE1E2D; text-decoration: underline;' href='/privacy-policy'>Datenschutzrichtlinie</a>"
   },
   "privacy": {
     "privacy": "Datenschutz ",
     "policy": "Richtlinie",
     "desc": "Unser Engagement für Transparenz und den Schutz Ihrer Daten.",
-    "date": "Zuletzt aktualisiert: 18. September 2025",
+    "date2": "Zuletzt aktualisiert: ",
+    "date": "18. September 2025",
     "table": "Seitenübersicht",
     "sections": [
       {
-        "title": "1. Einführung",
-        "desc": "Bei TrendForce GmbH verpflichten wir uns, die Privatsphäre und Sicherheit Ihrer personenbezogenen Daten zu gewährleisten. Wir erheben nur die Informationen, die notwendig sind, um unsere Beratungsleistungen effizient bereitzustellen und Ihre Erfahrung auf unserer Website zu verbessern."
-      },
-      {
-        "title": "2. Welche Daten wir erfassen",
-        "desc": "Wir können folgende Arten von Informationen erfassen:",
+        "title": "1. Informationen, die wir sammeln",
+        "desc": "TrendForce sammelt Informationen, um unseren Nutzern bessere Dienste bereitzustellen. Die Arten von Informationen, die wir sammeln, umfassen:",
         "points": [
-          "Personenbezogene Daten: Zum Beispiel Ihr Name, Ihre E-Mail-Adresse, Telefonnummer und Unternehmensangaben, wenn Sie uns kontaktieren oder ein Anfrageformular ausfüllen.",
-          "Nutzungsdaten: Informationen darüber, wie Sie mit unserer Website interagieren (z. B. IP-Adresse, Browsertyp, besuchte Seiten und Dauer des Besuchs).",
-          "Cookies und Tracking-Technologien: Zur Verbesserung der Website-Funktionalität, Analyse des Datenverkehrs und Optimierung Ihres Benutzererlebnisses."
+          "Persönliche Informationen: Name, E-Mail-Adresse, Telefonnummer und andere Kontaktdaten, die Sie angeben, wenn Sie uns kontaktieren oder unsere Dienste nutzen.",
+          "Nutzungsdaten: Informationen darüber, wie Sie unsere Website nutzen, einschließlich Ihrer Surfgewohnheiten, besuchten Seiten und genutzten Funktionen.",
+          "Technische Daten: IP-Adresse, Browsertyp und -version, Zeitzoneneinstellungen, Betriebssystem und Plattform."
         ]
       },
       {
-        "title": "3. Wie wir Ihre Daten verwenden",
-        "desc": "Wir verwenden Ihre Daten für folgende Zwecke:",
+        "title": "2. Wie wir Ihre Informationen verwenden",
+        "desc": "Wir verwenden die gesammelten Informationen für verschiedene Zwecke, einschließlich:",
         "points": [
-          "Um auf Ihre Anfragen zu antworten und Beratungsleistungen bereitzustellen.",
-          "Zur Verbesserung der Leistung und Benutzerfreundlichkeit unserer Website.",
-          "Um Ihnen Updates, Angebote oder Unternehmensneuigkeiten zu senden (nur, wenn Sie eingewilligt haben).",
-          "Zur Erfüllung rechtlicher Verpflichtungen und zur Sicherstellung der Website-Sicherheit."
+          "Bereitstellung, Wartung und Verbesserung unserer Dienste.",
+          "Beantwortung Ihrer Anfragen und Erfüllung Ihrer Wünsche.",
+          "Versand administrativer Informationen, wie Aktualisierungen unserer Bedingungen und Richtlinien.",
+          "Personalisierung Ihrer Erfahrung auf unserer Website.",
+          "Analyse von Nutzungsmustern zur Verbesserung unserer Website und Dienste.",
+          "Schutz unserer Rechte, Privatsphäre, Sicherheit oder Eigentum."
         ]
       },
       {
-        "title": "4. Datenschutz und Sicherheit",
-        "desc": "Wir setzen geeignete technische und organisatorische Maßnahmen ein, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung zu schützen. Alle Informationen werden sicher gespeichert, und der Zugriff ist ausschließlich autorisiertem Personal vorbehalten."
-      },
-      {
-        "title": "5. Weitergabe von Daten",
-        "desc": "Ihre personenbezogenen Daten werden nicht verkauft, gehandelt oder vermietet.\n Wir können Daten nur dann mit vertrauenswürdigen Drittanbietern teilen, wenn dies notwendig ist, zum Beispiel:",
+        "title": "3. Cookies und ähnliche Technologien",
+        "desc": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um Aktivitäten auf unserer Website zu verfolgen und bestimmte Informationen zu speichern.",
         "points": [
-          "Dienstleister, die beim Hosting oder bei der Analyse der Website helfen.",
-          "Rechtsbehörden, wenn dies gesetzlich vorgeschrieben ist oder zum Schutz unserer Rechte erforderlich ist."
-        ],
-        "note": "Alle Drittanbieter sind an strenge Datenschutzvereinbarungen gebunden."
+          "Cookies sind Dateien mit einer kleinen Menge an Daten, die eine anonyme eindeutige Kennung enthalten können.",
+          "Sie können Ihren Browser anweisen, alle Cookies abzulehnen oder anzuzeigen, wenn ein Cookie gesendet wird.",
+          "Wenn Sie keine Cookies akzeptieren, können möglicherweise einige Funktionen unserer Website nicht genutzt werden."
+        ]
       },
       {
-        "title": "6. Cookies-Richtlinie",
-        "desc": "Unsere Website verwendet Cookies, um Funktionen zu verbessern und die Leistung zu analysieren. \n Sie können Cookies in Ihren Browsereinstellungen steuern oder deaktivieren; dies kann jedoch bestimmte Funktionen unserer Website beeinträchtigen."
-      },
-      {
-        "title": "7. Aufbewahrung von Daten",
-        "desc": "Wir speichern personenbezogene Daten nur so lange, wie es zur Erfüllung der in dieser Richtlinie beschriebenen Zwecke erforderlich oder gesetzlich vorgeschrieben ist."
-      },
-      {
-        "title": "8. Ihre Rechte",
-        "desc": "Als Nutzer haben Sie das Recht:",
+        "title": "4. Datensicherheit",
+        "desc": "Die Sicherheit Ihrer Daten ist uns wichtig. Wir setzen angemessene technische und organisatorische Maßnahmen ein, um Ihre persönlichen Informationen zu schützen, können jedoch keine absolute Sicherheit garantieren.",
         "points": [
-          "Auf Ihre personenbezogenen Daten zuzugreifen, diese zu korrigieren oder zu löschen.",
-          "Ihre Einwilligung zur Datenverarbeitung jederzeit zu widerrufen.",
-          "Eine Kopie der Informationen anzufordern, die wir über Sie gespeichert haben."
-        ],
-        "note": "Um diese Rechte auszuüben, kontaktieren Sie uns bitte über die unten angegebenen Kontaktinformationen."
+          "Wir implementieren technische und organisatorische Schutzmaßnahmen gegen Verlust, Änderung, unbefugten Zugriff oder Offenlegung personenbezogener Daten.",
+          "Nur autorisiertes Personal hat Zugriff auf persönliche Daten."
+        ]
       },
       {
-        "title": "9. Links zu anderen Websites",
-        "desc": "Unsere Website kann Links zu externen Websites enthalten. Wir sind nicht verantwortlich für die Datenschutzpraktiken oder Inhalte solcher Drittanbieter-Websites."
+        "title": "5. Drittanbieter-Dienste",
+        "desc": "Unsere Website kann Links zu Websites Dritter enthalten, die nicht von uns betrieben werden.",
+        "points": [
+          "Wenn Sie auf einen Drittanbieter-Link klicken, werden Sie auf deren Website weitergeleitet.",
+          "Wir empfehlen Ihnen dringend, die Datenschutzrichtlinie jeder besuchten Website zu überprüfen.",
+          "Wir übernehmen keine Verantwortung für Inhalte, Datenschutzrichtlinien oder Praktiken von Websites oder Diensten Dritter."
+        ]
       },
       {
-        "title": "10. Aktualisierungen dieser Richtlinie",
-        "desc": "Wir können diese Datenschutzerklärung gelegentlich aktualisieren, um Änderungen unserer Praktiken oder gesetzlicher Anforderungen zu berücksichtigen. Alle Aktualisierungen werden auf dieser Seite mit einem neuen „Zuletzt aktualisiert\"-Datum veröffentlicht."
+        "title": "6. Ihre Datenschutzrechte",
+        "desc": "Abhängig von Ihrem Standort können Sie bestimmte Rechte in Bezug auf Ihre persönlichen Daten haben:",
+        "points": [
+          "Das Recht auf Zugriff, Aktualisierung oder Löschung Ihrer persönlichen Daten.",
+          "Das Recht auf Berichtigung, wenn Ihre Informationen ungenau oder unvollständig sind.",
+          "Das Recht, der Verarbeitung Ihrer persönlichen Daten zu widersprechen.",
+          "Das Recht, die Verarbeitung Ihrer persönlichen Daten einzuschränken.",
+          "Das Recht auf Datenübertragbarkeit.",
+          "Das Recht, die Einwilligung jederzeit zu widerrufen."
+        ]
       },
       {
-        "title": "11. Kontakt",
+        "title": "7. Änderungen dieser Datenschutzrichtlinie",
+        "desc": "Wir können unsere Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite zusammen mit dem aktualisierten 'Zuletzt aktualisiert'-Datum veröffentlicht.",
+        "points": [
+          "Es wird empfohlen, diese Datenschutzrichtlinie regelmäßig auf Änderungen zu überprüfen.",
+          "Änderungen treten in Kraft, sobald sie auf dieser Seite veröffentlicht werden."
+        ]
+      },
+      {
+        "title": "8. Kontakt",
         "desc": "Wenn Sie Fragen oder Bedenken bezüglich dieser Datenschutzerklärung oder Ihrer personenbezogenen Daten haben, kontaktieren Sie uns bitte unter:\n\n TrendForce GmbH",
-        "email": "E-Mail: dennis@cundw.io",
-        "address": "Adresse: Warwitzstrasse 9, Salzburg 5023, Austria"
+        "email": "E-Mail: info@trendforceconsulting.com",
+        "address": "Adresse:  Westgate Center, 3665 Bonita Beach Road Suite 1-3, Bonita Springs, FL 34134-4198, USA"
       }
     ]
   },
   "terms": {
-    "terms": "Allgemeine Geschäfts-",
-    "condition": "bedingungen",
+    "terms": "Geschäfts & ",
+    "conditions": "Bedingungen",
     "desc": "Unser Engagement für Transparenz und den Schutz Ihrer Daten.",
-    "date": "Zuletzt aktualisiert: 18. September 2025 ",
-    "table": "Seitenübersicht",
+    "date2": "Zuletzt aktualisiert: ",
+    "date": "18. Sep. 2025",
+    "table": "Inhaltsverzeichnis",
     "sections": [
       {
-        "title": "1. Einführung",
-        "desc": "Diese Allgemeinen Geschäftsbedingungen regeln Ihre Nutzung der von TrendForce GmbH („wir\", „uns\", „unser\") betriebenen Website. Durch den Zugriff auf diese Website bestätigen Sie, dass Sie diese Bedingungen gelesen, verstanden und akzeptiert haben. Wenn Sie nicht einverstanden sind, nutzen Sie die Website bitte nicht weiter."
+        "title": "1. Einleitung",
+        "desc": "Willkommen bei TrendForce. Diese Allgemeinen Geschäftsbedingungen beschreiben die Regeln und Vorschriften für die Nutzung unserer Website und Dienstleistungen.\n\nDurch den Zugriff auf diese Website gehen wir davon aus, dass Sie diese Allgemeinen Geschäftsbedingungen vollständig akzeptieren. Nutzen Sie unsere Website nicht weiter, wenn Sie nicht alle auf dieser Seite aufgeführten Bedingungen akzeptieren."
       },
       {
-        "title": "2. Nutzung unserer Website",
-        "desc": "Sie stimmen zu, unsere Website ausschließlich für rechtmäßige Zwecke zu nutzen und in einer Weise, die keine Rechte anderer verletzt oder deren Nutzung der Website beeinträchtigt.\n Sie dürfen nicht:",
+        "title": "2. Nutzungslizenz",
+        "desc": "Sofern nicht anders angegeben, besitzen TrendForce und/oder seine Lizenzgeber die geistigen Eigentumsrechte an allen Materialien auf dieser Website. Alle geistigen Eigentumsrechte sind vorbehalten.\n\nSie dürfen Seiten von der Website für Ihren eigenen persönlichen Gebrauch anzeigen und/oder drucken, vorbehaltlich der in diesen Bedingungen festgelegten Einschränkungen.\n\nSie dürfen nicht:",
         "points": [
-          "Sich an rechtswidrigen, betrügerischen oder schädlichen Aktivitäten beteiligen.",
-          "Versuchen, unbefugten Zugriff auf Teile unserer Website oder Systeme zu erlangen.",
-          "Versuchen, unbefugten Zugriff auf Teile unserer Website oder Systeme zu erlangen."
+          "Material von dieser Website erneut veröffentlichen",
+          "Material von dieser Website verkaufen, vermieten oder unterlizenzieren",
+          "Material von dieser Website reproduzieren, duplizieren oder kopieren",
+          "Inhalte von dieser Website weiterverbreiten"
         ]
       },
       {
-        "title": "3. Geistige Eigentumsrechte",
-        "desc": "Alle Inhalte auf dieser Website, einschließlich Texte, Grafiken, Logos, Bilder und andere Materialien, sind geistiges Eigentum der TrendForce GmbH, sofern nicht anders angegeben.\n Sie dürfen keine Inhalte dieser Website ohne vorherige schriftliche Zustimmung reproduzieren, verbreiten oder verwenden."
+        "title": "3. Benutzerinhalte",
+        "desc": "In diesen Allgemeinen Geschäftsbedingungen bedeutet 'Benutzerinhalte' Material (einschließlich, aber nicht beschränkt auf Text, Bilder, Audiomaterial, Videomaterial und audiovisuelles Material), das Sie aus irgendeinem Grund auf unserer Website einreichen.\n\nSie gewähren TrendForce eine weltweite, unwiderrufliche, nicht-exklusive, gebührenfreie Lizenz zur Nutzung, Reproduktion, Anpassung, Veröffentlichung, Übersetzung und Verbreitung Ihrer Benutzerinhalte in allen bestehenden oder zukünftigen Medien. Sie gewähren TrendForce auch das Recht, diese Rechte zu unterlizenzieren und eine Klage wegen Verletzung dieser Rechte einzureichen."
       },
       {
-        "title": "4. Dienstleistungen und Informationsgenauigkeit",
-        "desc": "Wir bemühen uns, sicherzustellen, dass die auf unserer Website bereitgestellten Informationen korrekt und aktuell sind.\n Die TrendForce GmbH übernimmt jedoch keine Garantie für die Vollständigkeit, Genauigkeit oder Zuverlässigkeit der Informationen und Materialien auf dieser Website.\n Wir behalten uns das Recht vor, Teile der Website oder angebotene Dienstleistungen jederzeit und ohne Vorankündigung zu ändern, auszusetzen oder einzustellen."
-      },
-      {
-        "title": "5. Haftungsbeschränkung",
-        "desc": "Im größtmöglichen gesetzlich zulässigen Umfang haftet die TrendForce GmbH nicht für direkte, indirekte, zufällige oder Folgeschäden, die entstehen durch:",
+        "title": "4. Haftungsbeschränkung",
+        "desc": "Soweit gesetzlich zulässig, schließen wir alle Zusicherungen, Garantien und Bedingungen in Bezug auf unsere Website und die Nutzung dieser Website aus.\n\nNichts in diesem Haftungsausschluss wird:",
         "points": [
-          "Ihre Nutzung oder die Unfähigkeit zur Nutzung der Website oder Dienstleistungen.",
-          "Unrichtigkeiten, Fehler oder Auslassungen in den Website-Inhalten."
-        ],
-        "note": "Unbefugter Zugriff oder Änderung Ihrer Daten."
+          "Unsere oder Ihre Haftung für Tod oder Körperverletzung einschränken oder ausschließen",
+          "Unsere oder Ihre Haftung für Betrug oder betrügerische Falschdarstellung einschränken oder ausschließen",
+          "Unsere oder Ihre Haftung in irgendeiner Weise einschränken, die nach geltendem Recht nicht zulässig ist",
+          "Unsere oder Ihre Haftung ausschließen, die nach geltendem Recht nicht ausgeschlossen werden kann"
+        ]
       },
       {
-        "title": "6. Externe Links",
-        "desc": "Unsere Website kann Links zu Websites Dritter enthalten, die Ihnen als zusätzliche Information dienen.\n Wir kontrollieren oder unterstützen diese externen Seiten nicht und sind nicht verantwortlich für deren Inhalte, Datenschutzpraktiken oder Nutzungsbedingungen."
+        "title": "5. Anwendbares Recht",
+        "desc": "Diese Allgemeinen Geschäftsbedingungen unterliegen den Gesetzen von [Ihr Land] und werden in Übereinstimmung mit diesen ausgelegt, und Sie unterwerfen sich unwiderruflich der ausschließlichen Zuständigkeit der Gerichte an diesem Ort."
       },
       {
-        "title": "7. Datenschutz und Datensicherheit",
-        "desc": "Ihre Nutzung unserer Website unterliegt ebenfalls unserer Datenschutzerklärung, die beschreibt, wie wir personenbezogene Daten erfassen, nutzen und schützen."
+        "title": "6. Änderungen der Bedingungen",
+        "desc": "TrendForce behält sich das Recht vor, diese Allgemeinen Geschäftsbedingungen jederzeit zu ändern. Wir werden die Benutzer über Änderungen informieren, indem wir die neuen Allgemeinen Geschäftsbedingungen auf dieser Seite veröffentlichen.\n\nIhre fortgesetzte Nutzung der Website nach der Veröffentlichung von Änderungen stellt Ihre Zustimmung zu den neuen Allgemeinen Geschäftsbedingungen dar."
       },
       {
-        "title": "8. Benutzerkonten (falls zutreffend)",
-        "desc": "Falls unsere Website die Erstellung eines Benutzerkontos erfordert, sind Sie für die Vertraulichkeit Ihrer Zugangsdaten sowie für alle Aktivitäten verantwortlich, die über Ihr Konto erfolgen.\n Wir behalten uns das Recht vor, Konten zu sperren oder zu löschen, die gegen diese Bedingungen verstoßen."
-      },
-      {
-        "title": "9. Änderungen der Bedingungen",
-        "desc": "Wir können diese Allgemeinen Geschäftsbedingungen gelegentlich überarbeiten.\n Aktualisierungen werden auf dieser Seite mit einem neuen „Zuletzt aktualisiert \"-Datum veröffentlicht.\n Ihre fortgesetzte Nutzung der Website nach solchen Änderungen gilt als Zustimmung zu den neuen Bedingungen."
-      },
-      {
-        "title": "10. Anwendbares Recht und Gerichtsstand",
-        "desc": "Diese Bedingungen unterliegen den Gesetzen Deutschlands.\n Alle Streitigkeiten, die sich aus der Nutzung unserer Website ergeben oder damit zusammenhängen, unterliegen der ausschließlichen Gerichtsbarkeit der Gerichte von [Ort einfügen], Deutschland."
-      },
-      {
-        "title": "11. Kontakt",
-        "desc": "Wenn Sie Fragen oder Bedenken zu dieser Datenschutzerklärung oder Ihren personenbezogenen Daten haben, kontaktieren Sie uns bitte unter:\n\n TrendForce GmbH",
-        "email": "E-Mail: dennis@cundw.io",
-        "address": "Adresse:  Warwitzstrasse 9, Salzburg 5023, Austria"
+        "title": "7. Kontakt",
+        "desc": "Wenn Sie Fragen oder Bedenken zu dieser Datenschutzerklärung oder Ihren personenbezogenen Daten haben, kontaktieren Sie uns bitte unter:\n\n TrendForce",
+        "email": "E-Mail: info@trendforceconsulting.com",
+        "address": "Adresse:  Westgate Center, 3665 Bonita Beach Road Suite 1-3, Bonita Springs, FL 34134-4198, USA"
       }
     ]
   },

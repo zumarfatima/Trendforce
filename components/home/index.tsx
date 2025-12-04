@@ -10,7 +10,7 @@ import CookieConsent from "../CookieConsent";
 const HomePage = () => {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5 md:px-15">
         <HeroSection />
         <ServicesSection />
         <AboutUs />
@@ -18,8 +18,8 @@ const HomePage = () => {
       <div className="">
         <TrendforceAdvantage />
       </div>
-      <FAQsSection />
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5 md:px-15">
+        <FAQsSection />
         <StartNowSection />
         <ContactUs />
       </div>

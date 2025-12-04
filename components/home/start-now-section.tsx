@@ -25,6 +25,7 @@
 "use client";
 import { useTranslation } from "@/context/translation-context";
 import MainHeading from "../common/main-heading";
+import { redirect } from "next/navigation";
 // import { useTranslation } from "@/context/translation-context";
 
 const StartNowSection = () => {
@@ -32,7 +33,7 @@ const StartNowSection = () => {
   const t = lang.startNowSection;
 
   return (
-    <div className="bg-black flex flex-col items-center py-4 rounded-3xl px-5 mx-5 my-10">
+    <div className="bg-black flex flex-col items-center py-10 rounded-3xl px-5 my-10">
       <MainHeading
         button={t.button}
         center={true}
@@ -41,7 +42,10 @@ const StartNowSection = () => {
         heading2={t.heading2}
         subheading={t.subheading}
       />
-      <button className="text-white bg-linear-to-b from-red-secondary to-red-primary max-w-fit px-5 md:px-10 md:py-2 rounded-lg font-medium cursor-pointer transition hover:bg-red-400">
+      <button
+        onClick={() => redirect("/#contact-us")}
+        className="text-white bg-linear-to-b from-red-secondary to-red-primary max-w-fit px-2 md:px-10 py-2 rounded-lg font-medium cursor-pointer transition hover:bg-red-400"
+      >
         {t.cta}
       </button>
     </div>

@@ -9,7 +9,7 @@
   "heroSection": {
     "pioneeringTheFuture": "Pioneering The Future of",
     "business": "Business",
-    "empoweringJourney": "Empowering Your Journey to Global Financial Success Through Customized and Personalized Financial Consulting for Every Client",
+    "empoweringJourney": "Empowering your journey to global financial success through customized and personalized financial consulting for every client",
     "exploreServices": "Explore Our Services",
     "contactUs": "Contact Us"
   },
@@ -87,62 +87,19 @@
       },
       {
         "title": "Tailored Strategies",
-        "description": "Every recommendation is grounded in rigorous data, research, and modeling."
+        "description": "No one-size-fits-all. We design programs aligned to your context and ambition."
       },
       {
         "title": "Proven Results",
-        "description": "Every recommendation is grounded in rigorous data, research, and modeling."
+        "description": "Measured impact with clear KPIs, from growth acceleration to cost optimization."
       }
     ]
-  },
-  "product-section": {
-    "Our Premium Products": "Our Premium Products",
-    "Complete security solutions for your cryptocurrency": "Complete security solutions for your cryptocurrency",
-    "Omega Hardware Wallet": "Omega Hardware Wallet",
-    "Best Seller": "Best Seller",
-    "paragraph": "Confirm transactions on a secure element and keep keys offline. Pairs perfectly with the Omega Seed for long-term recovery.",
-    "Supports 1000+ cryptocurrencies": "Supports 1000+ cryptocurrencies",
-    "Secure element chip protection": "Secure element chip protection",
-    "PIN & passphrase protection": "PIN & passphrase protection",
-    "OLED display for verification": "OLED display for verification",
-    "price": "$149.99",
-    "VAT included": "VAT included",
-    "In Stock": "In Stock",
-    "Buy Now": "Buy Now",
-    "Learn More": "Learn More",
-    "Physically secure your transactions with": "Physically secure your transactions with",
-    "Omega crypto wallets": "Omega crypto wallets",
-    "Omega Seedphrase": "Omega Seedphrase",
-    "paragraph2": "Titanium recovery solution designed for long-term protection of your Secret Recovery Phrase. backup for ultimate peace of mind.",
-    "Fire, water & corrosion resistant": "Fire, water & corrosion resistant",
-    "Titanium durability — no ink to fade": "Titanium durability — no ink to fade",
-    "Fully offline self-custody": "Fully offline self-custody",
-    "Compatible with standard BIP39 phrases": "Compatible with standard BIP39 phrases",
-    "Free worldwide shipping": "Free worldwide shipping"
-  },
-  "coins-section": {
-    "Thousands of supported coins and tokens": "Thousands of supported coins and tokens",
-    "Bitcoin, Ethereum, and 1000+ other cryptocurrencies supported": "Bitcoin, Ethereum, and 1000+ other cryptocurrencies supported",
-    "Why Choose Omega?": "Why Choose Omega?",
-    "slogan": "Advanced security features designed for the modern crypto investor",
-    "Military-Grade Security": "Military-Grade Security",
-    "description-1": "Advanced encryption and secure element technology protect your assets from any threat.",
-    "Complete Offline Storage": "Complete Offline Storage",
-    "description2": "Keep your private keys completely offline and away from hackers.",
-    "Intuitive Interface": "Intuitive Interface",
-    "description3": "Intuitive interface makes managing your crypto simple, secure, and stress-free."
-  },
-  "recovery-section": {
-    "Omega Recover": "Omega Recover",
-    "Never lose access to your digital assets": "Never lose access to your digital assets",
-    "description": "Secure peace of mind with Omega Recover. Restore access to your crypto wallet in case of a lost, damaged, or out of reach Secret Recovery Phrase.",
-    "Learn More": "Learn More"
   },
   "faqs": {
     "button": "FAQs",
     "title1": "Frequently Asked ",
     "title2": "Questions",
-    "desc": "Everything you need to know about TrendForce Consulting",
+    "desc": "Find answers to common questions about our services and approach.",
     "items": [
       {
         "question": "What industries does TrendForce Consulting work with?",
@@ -184,8 +141,27 @@
       "phone": "Phone Number",
       "subject": "Subject",
       "message": "Message",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "submitting": "Submitting..."
     },
+    "errors": {
+      "nameRequired": "Please enter your name.",
+      "emailRequired": "Please enter your email address.",
+      "emailInvalid": "Please enter a valid email address.",
+      "phoneRequired": "Please enter your phone number.",
+      "subjectRequired": "Please enter a subject.",
+      "messageRequired": "Please enter a message.",
+      "serverError": "An error occurred while submitting the form. Please try again later.",
+      "successError": "Your message has been sent successfully."
+    },
+    "placeholders": {
+      "name": "Enter your name",
+      "email": "Enter your email",
+      "phone": "Enter phone number",
+      "subject": "Enter subject",
+      "message": "Write your message here..."
+    },
+
     "contactDetails": {
       "title": "Contact Information:",
       "address": {
@@ -215,9 +191,9 @@
       {
         "title": "Quick Links",
         "links": [
-          { "label": "Home", "href": "#home" },
-          { "label": "Services", "href": "#services" },
-          { "label": "About Us", "href": "#about-us" }
+          { "label": "Home", "href": "/#home" },
+          { "label": "Services", "href": "/#services" },
+          { "label": "About Us", "href": "/#about-us" }
         ]
       },
       {
@@ -234,165 +210,158 @@
         "title": "Contacts us",
         "links": [
           {
-            "image": "/assets/home-images/email.svg",
+            "image": "/assets/home-images/email-icon.svg",
             "label": "info@trendforceconsulting.com",
             "href": "mailto:info@trendforceconsulting.com"
           },
           {
             "image": "/assets/home-images/calling.svg",
             "label": "+421 904 577 873",
-            "href": "tel:+421 904 577 873"
+            "href": "tel:+421904577873"
           },
           {
             "image": "/assets/home-images/location.svg",
-            "label": "Westgate Center,3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198,USA",
-            "href": "/terms-and-conditions"
+            "label": "Westgate Center, 3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198, USA",
+            "href": "https://maps.app.goo.gl/rPFHq42G4EThFFXe7"
           }
         ]
       }
     ],
     "copyright": "Copyright © 2022 Trendforce Consulting",
-    "copyright2": "All Rights Reserved | <a style='color:#BE1E2D' href='/terms-and-conditions'>Terms and Conditions</a> | <a style='color:#BE1E2D' href='/privacy-policy'>Privacy Policy</a>"
+    "copyright2": "All Rights Reserved | <a style='color:#BE1E2D; text-decoration: underline;' href='/terms-and-conditions'>Terms and Conditions</a> | <a style='color:#BE1E2D; text-decoration: underline;' href='/privacy-policy'>Privacy Policy</a>"
   },
   "privacy": {
     "privacy": "Privacy ",
     "policy": "Policy",
     "desc": "Our commitment to transparency and the protection of your data.",
-    "date": "Last Updated: Sep 18, 2025",
+    "date2": "Last Updated: ",
+    "date": "Sep 18, 2025",
     "table": "Table of Content",
     "sections": [
       {
-        "title": "1. Introduction",
-        "desc": "At Trendforce Consulting, we are committed to ensuring the privacy and security of your personal data. We collect only the information necessary to provide our consulting services efficiently and to enhance your experience on our website."
-      },
-      {
-        "title": "2. Information We Collect",
-        "desc": "We may collect the following types of information:",
+        "title": "1. Information We Collect",
+        "desc": "TrendForce collects information to provide better services to our users. The types of information we collect include:",
         "points": [
-          "Personal Information: Such as your name, email address, phone number, and company details when you contact us or fill out an inquiry form.",
-          "Usage Data: Information about how you interact with our website (e.g., IP address, browser type, pages visited, and duration of visit).",
-          "Cookies and Tracking Technologies: To improve site functionality, analyze traffic, and enhance your browsing experience."
+          "Personal Information: Name, email address, phone number, and other contact details you provide when you contact us or use our services.",
+          "Usage Data: Information about how you use our website, including browsing patterns, pages visited, and features used.",
+          "Technical Data: IP address, browser type and version, time zone settings, operating system, and platform."
         ]
       },
       {
-        "title": "3. How We Use Your Information",
-        "desc": "We use your data for the following purposes:",
+        "title": "2. How We Use Your Information",
+        "desc": "We use the information we collect for various purposes, including:",
         "points": [
-          "To respond to your inquiries and provide consulting services.",
-          "To improve our website's performance and user experience.",
-          "To send you updates, offers, or company news (only if you've opted in).",
-          "To comply with legal obligations and ensure website security."
+          "Providing, maintaining, and improving our services.",
+          "Responding to your inquiries and fulfilling your requests.",
+          "Sending administrative information, including updates to our terms and policies.",
+          "Personalizing your experience on our website.",
+          "Analyzing usage patterns to improve our website and services.",
+          "Protecting our rights, privacy, safety, or property."
         ]
       },
       {
-        "title": "4. Data Protection and Security",
-        "desc": "We implement appropriate technical and organizational measures to protect your personal data from unauthorized access, alteration, disclosure, or destruction. All information is stored securely, and access is restricted to authorized personnel only."
-      },
-      {
-        "title": "5. Data Sharing and Disclosure",
-        "desc": "Your personal information is not sold, traded, or rented to others.\n We may share data with trusted third parties only when necessary, such as:",
+        "title": "3. Cookies and Similar Technologies",
+        "desc": "We use cookies and similar tracking technologies to track activity on our website and store certain information.",
         "points": [
-          "Service providers assisting in website hosting or analytics.",
-          "Legal authorities, if required by law or to protect our rights."
-        ],
-        "note": "All third-party partners are bound by strict data protection agreements."
+          "Cookies are files with a small amount of data that may include an anonymous unique identifier.",
+          "You can instruct your browser to refuse all cookies or notify you when a cookie is being sent.",
+          "If you do not accept cookies, some website features may not function properly."
+        ]
       },
       {
-        "title": "6. Cookies Policy",
-        "desc": "Our website uses cookies to enhance functionality and analyze performance. \n You can control or disable cookies through your browser settings; however, doing so may affect certain website features."
-      },
-      {
-        "title": "7. Data Retention",
-        "desc": "We retain personal data only for as long as necessary to fulfill the purposes outlined in this policy or as required by applicable law."
-      },
-      {
-        "title": "8. Your Rights",
-        "desc": "As a user, you have the right to:",
+        "title": "4. Data Security",
+        "desc": "The security of your data is important to us. We implement commercially acceptable measures to protect your personal information, but no method of transmission over the internet or electronic storage is 100% secure.",
         "points": [
-          "Access, correct, or delete your personal data.",
-          "Withdraw consent to data processing at any time.",
-          "Request a copy of the information we hold about you."
-        ],
-        "note": "To exercise these rights, please contact us using the details below."
+          "We use technical and organizational safeguards to protect data against loss, alteration, unauthorized access, or disclosure.",
+          "Only authorized personnel have access to your personal data."
+        ]
       },
       {
-        "title": "9. Links to Other Websites",
-        "desc": "Our website may contain links to external websites. We are not responsible for the privacy practices or content of such third-party sites."
+        "title": "5. Third-Party Services",
+        "desc": "Our website may contain links to third-party websites that are not operated by us.",
+        "points": [
+          "If you click on a third-party link, you will be redirected to their website.",
+          "We strongly advise you to review the Privacy Policy of every site you visit.",
+          "We are not responsible for the content, privacy policies, or practices of third-party sites or services."
+        ]
       },
       {
-        "title": "10. Updates to This Policy",
-        "desc": "We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. Any updates will be posted on this page with a revised \"Last Updated\" date."
+        "title": "6. Your Data Protection Rights",
+        "desc": "Depending on your location, you may have certain rights regarding your personal data:",
+        "points": [
+          "The right to access, update, or delete your personal information.",
+          "The right to rectification if your information is inaccurate or incomplete.",
+          "The right to object to our processing of your personal data.",
+          "The right to restrict the processing of your data.",
+          "The right to data portability.",
+          "The right to withdraw consent at any time."
+        ]
       },
       {
-        "title": "11. Contact Us",
+        "title": "7. Changes to This Privacy Policy",
+        "desc": "We may update our Privacy Policy periodically. Changes will be posted on this page along with an updated 'Last Updated' date.",
+        "points": [
+          "You are advised to review this policy periodically.",
+          "Changes become effective once posted on this page."
+        ]
+      },
+      {
+        "title": "8. Contact Us",
         "desc": "If you have any questions or concerns regarding this Privacy Policy or your personal data, please contact us at:\n\n TrendForce",
         "email": "Email: info@trendforceconsulting.com",
-        "address": "Address: Westgate Center,3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198,USA"
+        "address": "Address: Westgate Center,3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198, USA"
       }
     ]
   },
   "terms": {
     "terms": "Terms & ",
-    "condition": "Conditions",
+    "conditions": "Conditions",
     "desc": "Our commitment to transparency and the protection of your data.",
-    "date": "Last Updated: Sep 18, 2025 ",
+    "date2": "Last Updated: ",
+    "date": "Sep 18, 2025 ",
     "table": "Table of Content",
     "sections": [
       {
         "title": "1. Introduction",
-        "desc": "These Terms & Conditions govern your use of the website operated by TrendForce GmbH (\"we,\" \"our,\" \"us\"). By accessing this website, you acknowledge that you have read, understood, and agreed to these terms. If you do not agree, please refrain from using the website."
+        "desc": "Welcome to TrendForce. These terms and conditions outline the rules and regulations for the use of our website and services.\n\nBy accessing this website, we assume you accept these terms and conditions in full. Do not continue to use our website if you do not accept all of the terms and conditions stated on this page."
       },
       {
-        "title": "2. Use of Our Website",
-        "desc": "You agree to use our website for lawful purposes only and in a way that does not infringe upon the rights of others or restrict their use of the website.\n You must not:",
+        "title": "2. License to Use",
+        "desc": "Unless otherwise stated, TrendForce and/or its licensors own the intellectual property rights for all material on this website. All intellectual property rights are reserved.\n\nYou may view and/or print pages from the website for your own personal use subject to restrictions set in these terms and conditions.\n\nYou must not:",
         "points": [
-          "Engage in any unlawful, fraudulent, or harmful activity.",
-          "Attempt to gain unauthorized access to any part of our website or systems.",
-          "Attempt to gain unauthorized access to any part of our website or systems."
+          "Republish material from this website",
+          "Sell, rent, or sub-license material from this website",
+          "Reproduce, duplicate, or copy material from this website",
+          "Redistribute content from this website"
         ]
       },
       {
-        "title": "3. Intellectual Property Rights",
-        "desc": "All content on this website, including text, graphics, logos, images, and other materials, is the intellectual property of TrendForce GmbH unless otherwise stated.\n You may not reproduce, distribute, or use any content from our website without prior written consent."
+        "title": "3. User Content",
+        "desc": "In these terms and conditions, 'User Content' means material (including without limitation text, images, audio material, video material, and audio-visual material) that you submit to our website for any purpose.\n\nYou grant TrendForce a worldwide, irrevocable, non-exclusive, royalty-free license to use, reproduce, adapt, publish, translate, and distribute your User Content in any existing or future media. You also grant TrendForce the right to sub-license these rights, and the right to bring an action for infringement of these rights."
       },
       {
-        "title": "4. Services and Information Accuracy",
-        "desc": "We make every effort to ensure that the information provided on our website is accurate and up to date.\n However, TrendForce GmbH does not guarantee the completeness, accuracy, or reliability of any information or materials available on this site.\n We reserve the right to modify, suspend, or discontinue any part of the website or services at any time without notice."
-      },
-      {
-        "title": "5. Limitation of Liability",
-        "desc": "To the fullest extent permitted by law, TrendForce GmbH shall not be liable for any direct, indirect, incidental, or consequential damages arising from:",
+        "title": "4. Limitation of Liability",
+        "desc": "To the maximum extent permitted by applicable law, we exclude all representations, warranties, and conditions relating to our website and the use of this website.\n\nNothing in this disclaimer will:",
         "points": [
-          "Your use or inability to use the website or services.",
-          "Any inaccuracies, errors, or omissions in the website content."
-        ],
-        "note": "Unauthorized access or alteration of your data."
+          "Limit or exclude our or your liability for death or personal injury",
+          "Limit or exclude our or your liability for fraud or fraudulent misrepresentation",
+          "Limit any of our or your liabilities in any way that is not permitted under applicable law",
+          "Exclude any of our or your liabilities that may not be excluded under applicable law"
+        ]
       },
       {
-        "title": "6. External Links",
-        "desc": "Our website may include links to third-party websites for your convenience.\n We do not control or endorse these external sites and are not responsible for their content, privacy practices, or terms of use."
+        "title": "5. Governing Law",
+        "desc": "These terms and conditions are governed by and construed in accordance with the laws of [Your Country], and you irrevocably submit to the exclusive jurisdiction of the courts in that location."
       },
       {
-        "title": "7. Privacy and Data Protection",
-        "desc": "Your use of our website is also governed by our Privacy Policy, which outlines how we collect, use, and protect your personal information."
+        "title": "6. Changes to Terms",
+        "desc": "TrendForce reserves the right to modify these terms and conditions at any time. We will notify users of any changes by posting the new terms and conditions on this page.\n\nYour continued use of the website after changes are posted constitutes your acceptance of the new terms and conditions."
       },
       {
-        "title": "8. User Accounts (if applicable)",
-        "desc": "If our website requires you to create an account, you are responsible for maintaining the confidentiality of your login credentials and for all activities under your account.\n We reserve the right to suspend or terminate accounts found to be in violation of these Terms."
-      },
-      {
-        "title": "9. Changes to the Terms",
-        "desc": "We may revise these Terms & Conditions from time to time.\n Any updates will be posted on this page with a revised \"Last Updated \" date.\n Your continued use of the website after such changes constitutes acceptance of the new Terms."
-      },
-      {
-        "title": "10. Governing Law and Jurisdiction",
-        "desc": "These Terms are governed by the laws of Germany. Any disputes arising from or related to the use of our website shall be subject to the exclusive jurisdiction of the courts of [Insert City], Germany."
-      },
-      {
-        "title": "11. Contact Us",
+        "title": "7. Contact Us",
         "desc": "If you have any questions or concerns regarding this Privacy Policy or your personal data, please contact us at:\n\n TrendForce",
         "email": "Email: info@trendforceconsulting.com",
-        "address": "Westgate Center,3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198,USA"
+        "address": "Address:  Westgate Center,3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198, USA"
       }
     ]
   },

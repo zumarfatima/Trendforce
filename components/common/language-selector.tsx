@@ -45,11 +45,11 @@ export default function LanguageSelector({
   };
 
   return (
-    <div ref={dropdownRef} className="relative inline-block w-full">
+    <div ref={dropdownRef} className="relative inline-block w-32 lg:w-full ">
       {/* Button */}
       <button
         onClick={() => setOpen(!open)}
-        className={` flex flex-row sm:w-auto gap-2 items-center justify-between border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer lg:px-2 ${
+        className={`w-32 lg:w-full flex flex-row  gap-2 items-center justify-between border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer lg:px-2 ${
           variant === "compact" ? "px-2 py-1 bg-white" : "px-4 "
         } w-full`}
       >
@@ -72,12 +72,12 @@ export default function LanguageSelector({
 
       {open && (
         <div
-          className={`absolute w-full bg-white border border-gray-200 rounded-lg shadow-md z-30
+          className={`absolute w-32 lg:w-full bg-white border border-gray-200 rounded-lg shadow-md z-30
       ${window.innerWidth < 640 ? "bottom-full mb-2" : "top-full mt-2"}`}
         >
           <button
             onClick={() => toggleLanguage("en")}
-            className={`w-full text-left px-4 py-2 hover:bg-gray-50 rounded-lg flex items-center space-x-2 ${
+            className={`w-32 lg:w-full text-left px-4 py-2 hover:bg-gray-50 rounded-lg flex items-center space-x-2 ${
               language === "en" ? "bg-gray-100 font-semibold" : ""
             }`}
           >
@@ -93,7 +93,7 @@ export default function LanguageSelector({
 
           <button
             onClick={() => toggleLanguage("de")}
-            className={`w-full text-left px-4 py-2 hover:bg-gray-50 rounded-lg flex items-center space-x-2 ${
+            className={` text-left px-4 w-32 lg:w-full py-2 hover:bg-gray-50 rounded-lg flex items-center space-x-2 ${
               language === "de" ? "bg-gray-100 font-semibold" : ""
             }`}
           >
