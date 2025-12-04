@@ -3,7 +3,7 @@ import React from "react";
 
 const TermAndConditions = () => {
   return (
-    <div>
+    <div className="container mx-auto px-5 md:px-15">
       <TermsAndConditions />
     </div>
   );

@@ -5,7 +5,6 @@ import TrendforceAdvantage from "./trend-force-advantage";
 import FAQsSection from "./faqs-section";
 import StartNowSection from "./start-now-section";
 import ContactUs from "./contact-us";
-import CookieConsent from "../CookieConsent";
 
 const HomePage = () => {
   return (

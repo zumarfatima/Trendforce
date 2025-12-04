@@ -5,7 +5,7 @@ import ContactUs from "../home/contact-us";
 
 const MainPrivacyPolicy = () => {
   return (
-    <div>
+    <div className="container mx-auto px-5 md:px-15">
       <PrivacyPolicySection />
       <StartNowSection />
       <ContactUs />
