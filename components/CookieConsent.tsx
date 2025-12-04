@@ -171,7 +171,7 @@ const CookieModal = () => {
 
         {/* 1st point (Essential/Strictly Necessary) */}
         <div className="mt-2 md:mt-3 border-t border-[#E6E6E6] pt-4">
-          <div className="flex justify-between items-center mb-1 text-[#575757]">
+          <div className="flex justify-between items-center mb-1 text-black">
             <h2 className="text-base text-[16px] md:text-lg font-bold flex items-center gap-2 text-secondary mb-2">
               <span className="bg-red-primary p-2 rounded-full inline-flex items-center justify-center">
                 <Image
@@ -181,7 +181,7 @@ const CookieModal = () => {
                   height={14}
                 />
               </span>
-              {t.sections.essential.title} {/* Changed from t.heading2 */}
+              {t.sections.essential.title}
             </h2>
 
             <label className="relative inline-flex items-center cursor-not-allowed">
@@ -239,7 +239,7 @@ const CookieModal = () => {
           {/* Changed from t.desc3 */}
         </div>
 
-        <div className="hidden md:block mt-3 pt-3">
+        <div className="block mt-3 pt-3">
           <div className="flex justify-between items-center mb-1">
             <h3 className="text-base sm:text-lg font-bold flex items-center gap-2 text-secondary mb-2">
               <span className="bg-red-primary p-2 rounded-full inline-flex items-center justify-center">

@@ -24,10 +24,9 @@ interface FooterData {
 const Footer = () => {
   const { lang } = useTranslation();
   const t: FooterData = lang.footer;
-  console.log("🚀 ~ Footer ~ t:", t);
 
   return (
-    <section className="sm:px-20 pt-15 bg-black">
+    <section className="sm:px-20 pt-15 pb-2 -mb-6 bg-black">
       <div className="container px-5 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] py-10 gap-10">
           <div className="flex flex-col gap-4 text-start  lg:items-start mb-4 lg:mb-0">
@@ -79,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="border-spacing-0.5 border-gray-50 p-0 m-0" />
-        <div className="mt-4 flex flex-col md:flex-row items-center justify-between gap-4 pb-2">
+        <div className="mt-4 flex flex-col md:flex-row items-center justify-between gap-4 ">
           <p className="text-white text-center md:text-start text-[16px] sm:text-base">
             {t.copyright}
           </p>

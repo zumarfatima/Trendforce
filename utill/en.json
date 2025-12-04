@@ -200,7 +200,7 @@
         "title": "Support",
         "links": [
           { "label": "FAQs", "href": "/#faqs" },
-          { "label": "Contact Us", "href": "#contact-us" },
+          { "label": "Contact Us", "href": "/#contact-us" },
           { "label": "Privacy Policy", "href": "/privacy-policy" },
           { "label": "Terms & Conditions", "href": "/terms-and-conditions" },
           { "label": "Impressum", "href": "/impressum" }
@@ -227,7 +227,7 @@
         ]
       }
     ],
-    "copyright": "Copyright © 2022 Trendforce Consulting",
+    "copyright": "Copyright © 2022 TrendForce Consulting",
     "copyright2": "All Rights Reserved | <a style='color:#BE1E2D; text-decoration: underline;' href='/terms-and-conditions'>Terms and Conditions</a> | <a style='color:#BE1E2D; text-decoration: underline;' href='/privacy-policy'>Privacy Policy</a>"
   },
   "privacy": {

@@ -95,7 +95,7 @@ const TermsAndConditionsSection = () => {
         highlightColor="#d62828"
       />
 
-      <div className="container flex w-full mx-auto mt-10">
+      <div className=" flex w-full gap-10 mt-10">
         <TableOfContents
           items={sections}
           active={activeSection}

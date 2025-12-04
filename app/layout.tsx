@@ -1,21 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import Navbar from "@/components/common/header/navbar";
 import { TranslationProvider } from "@/context/translation-context";
 import Footer from "@/components/shared/footer";
 import CookieConsent from "@/components/CookieConsent";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "TrendForce Consulting ",
@@ -29,11 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Toaster position="top-right" />
+      <body>
         <TranslationProvider>
+          <Toaster position="top-right" />
           <Navbar />
           <CookieConsent />
           {children}

@@ -1,6 +1,6 @@
 const MainContent = ({ sections, sectionRefs }: any) => {
   return (
-    <div className="container mx-auto flex-1 space-y-5 p-4">
+    <div className=" flex-1 space-y-5 py-4">
       {sections.map((section: any, index: number) => (
         <div
           id={section.id}
