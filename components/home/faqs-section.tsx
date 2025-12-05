@@ -10,7 +10,7 @@ const FAQsSection = () => {
   const faqData = lang.faqs;
 
   return (
-    <section id="faqs" className="py-16 bg-white my-10">
+    <section id="faqs" className="scroll-mt-10">
       <FAQs
         title1={faqData.title1}
         title2={faqData.title2}

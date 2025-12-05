@@ -30,14 +30,14 @@ const Footer = () => {
       <div className="container px-5 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] py-10 gap-10">
           <div className="flex flex-col gap-4 text-start  lg:items-start mb-4 lg:mb-0">
-            <a href="/" target="_self">
+            <Link href="/">
               <Image
                 src="/assets/home-icon.svg"
                 alt="icon"
                 width={200}
                 height={200}
               />
-            </a>
+            </Link>
             <p className="text-sm sm:text-base lg:pe-30 text-white">
               {t.description}
             </p>
@@ -45,7 +45,6 @@ const Footer = () => {
           {/* Right lists */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 space-y-3 text-white">
             {t.columns.map((col: FooterColumn, index: number) => {
-              console.log("🚀 ~ Footer ~ col:", col);
               return (
                 <div key={index} className="text-start">
                   <h3 className="text-[#e41c34] font-semibold mb-4">
@@ -62,13 +61,12 @@ const Footer = () => {
                             height={20}
                           />
                         )}
-                        <a
+                        <Link
                           href={link.href}
-                          target="_self"
                           className="text-white hover:text-red-600 transition-colors text-[16px] sm:text-base"
                         >
                           {link.label}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
