@@ -21,7 +21,7 @@ const ServicesSection = () => {
         subheading={lang.servicesSection.subheading}
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15 my-15 md:px-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15 my-15 xl:px-28">
         {lang.mainCards.map((card: ServiceCard, idx) => (
           <MainCard
             key={idx}
