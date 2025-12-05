@@ -205,7 +205,7 @@
         "title": "Kontakt",
         "links": [
           {
-            "image": "/assets/home-images/email-icon.svg",
+            "image": "/assets/home-images/email-filled.svg",
             "label": "info@trendforceconsulting.com",
             "href": "mailto:info@trendforceconsulting.com"
           },
