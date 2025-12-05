@@ -15,9 +15,7 @@
   --color-red-primary: var(--red-primary);
   --color-red-secondary: var(--red-secondary);
 }
-html {
-  scroll-behavior: smooth;
-}
+
 
 /* body {
   background: var(--background);
