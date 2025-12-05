@@ -26,7 +26,7 @@ const FAQs = ({
   };
 
   return (
-    <div className="">
+    <div className="py-16 bg-white my-10">
       <div className="container mx-auto text-left px-5">
         <MainHeading
           button="FAQs"

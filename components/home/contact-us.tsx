@@ -60,7 +60,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div id="contact-us" className="scroll-mt-10">
+    <div id="contact-us" className="scroll-mt-20">
       {/* Main Heading */}
       <div>
         <MainHeading
@@ -90,7 +90,7 @@ const ContactUs = () => {
                 htmlFor="name-contactus"
                 className="absolute bg-white mt-1 text-sm text-body duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-left bg-neutral-primary peer-focus:mt-0 px-2 peer-focus:px-2 peer-focus:text-fg-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:top-2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
-                Name <span className="text-red-500 ">*</span>
+                {t.form.name} <span className="text-red-500 ">*</span>
               </label>
 
               {errors.name && (
@@ -122,7 +122,7 @@ const ContactUs = () => {
                 htmlFor="email-contactus"
                 className="absolute bg-white mt-1 peer-focus:mt-0 text-sm text-body duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-left bg-neutral-primary px-2 peer-focus:px-2 peer-focus:text-fg-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:top-2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
-                Email <span className="text-red-500">*</span>
+                {t.form.email} <span className="text-red-500">*</span>
               </label>
 
               {errors.email && (
@@ -140,7 +140,11 @@ const ContactUs = () => {
               <input
                 type="text"
                 id="phone-contactus"
-                {...register("phone", { required: t.errors.phoneRequired })}
+                // {...register("phone", { required: t.errors.phoneRequired })}
+                {...register("phone", {
+                  required: true,
+                  minLength: 10, // <--- Added validation rule
+                })}
                 placeholder={t.placeholders.phone}
                 className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-heading bg-transparent rounded-lg border border-[#E3DBD8] appearance-none focus:outline-none focus:ring-0 focus:border-primary peer placeholder-transparent focus:placeholder:text-gray-400"
               />
@@ -149,16 +153,27 @@ const ContactUs = () => {
                 htmlFor="phone-contactus"
                 className="absolute bg-white mt-1 peer-focus:mt-0 text-sm text-body duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-left bg-neutral-primary px-2 peer-focus:px-2 peer-focus:text-fg-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-0 peer-placeholder-shown:top-2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
-                Phone <span className="text-red-500">*</span>
+                {t.form.phone} <span className="text-red-500">*</span>
               </label>
 
-              {errors.phone && (
+              {/* {errors.phone && (
                 <p className="">
                   {errors.phone && (
                     <span className="text-red-500 text-sm">
                       {t.errors.phoneRequired}
                     </span>
                   )}
+                </p>
+              )} */}
+              {errors.phone && (
+                <p className="mt-1">
+                  <span className="text-red-500 text-sm">
+                    {
+                      errors.phone.type === "required"
+                        ? t.errors.phoneRequired
+                        : t.errors.phoneMinLength // <--- Check for minLength error
+                    }
+                  </span>
                 </p>
               )}
             </div>
@@ -175,7 +190,7 @@ const ContactUs = () => {
                 htmlFor="subject-contactus"
                 className="absolute bg-white mt-1 peer-focus:mt-0 text-sm text-body duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-left bg-neutral-primary px-2 peer-focus:px-2 peer-focus:text-fg-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:top-2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
-                Subject <span className="text-red-500">*</span>
+                {t.form.subject} <span className="text-red-500">*</span>
               </label>
 
               {errors.subject && (
@@ -202,7 +217,7 @@ const ContactUs = () => {
                 htmlFor="message-contactus"
                 className="absolute bg-white text-sm text-body duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-left bg-neutral-primary px-2 peer-focus:px-2 peer-focus:text-fg-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:top-2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
-                Message <span className="text-red-500">*</span>
+                {t.form.message} <span className="text-red-500">*</span>
               </label>
 
               {errors.message && (

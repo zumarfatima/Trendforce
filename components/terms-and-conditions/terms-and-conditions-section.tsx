@@ -85,7 +85,7 @@ const TermsAndConditionsSection = () => {
   }));
 
   return (
-    <div className="w-full mt-10">
+    <div className="w-full mt-10 scrollmt-15">
       <PrivacyHeader
         title={lang.terms.terms}
         highlight={lang.terms.conditions}

@@ -143,6 +143,7 @@
       "emailRequired": "Bitte geben Sie Ihre Email ein.",
       "emailInvalid": "Bitte geben Sie eine gültige Email ein.",
       "phoneRequired": "Bitte geben Sie Ihre Telefonnummer ein.",
+      "phoneMinLength": "Bitte geben Sie mindestens 10 Ziffern ein.",
       "subjectRequired": "Bitte geben Sie einen Betreff ein.",
       "messageRequired": "Bitte geben Sie eine Nachricht ein.",
       "serverError": "Beim Senden des Formulars ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",

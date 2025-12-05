@@ -17,7 +17,7 @@ export default function HeaderMenu() {
           <LanguageSelector variant="compact" />
           <button
             onClick={() => redirect("/#contact-us")}
-            className="bg-linear-to-b from-red-secondary to-red-primary text-white py-2 px-2 rounded-lg whitespace-nowrap cursor-pointer text-[16px] "
+            className="bg-linear-to-b from-red-secondary to-red-primary text-white py-2 px-2 rounded-lg whitespace-nowrap cursor-pointer text-[14px] xl:text-[16px] "
           >
             {lang.header.getFreeConsultation}
           </button>
@@ -48,7 +48,7 @@ export default function HeaderMenu() {
             className="hover:text-foreground cursor-pointer"
             onClick={() => {
               setMenuOpen(false);
-              window.location.href = "/#home";
+              redirect("/");
             }}
           >
             {lang.header.home}
@@ -58,7 +58,7 @@ export default function HeaderMenu() {
             className="hover:text-foreground cursor-pointer"
             onClick={() => {
               setMenuOpen(false);
-              window.location.href = "/#services";
+              redirect("/#services");
             }}
           >
             {lang.header.services}
@@ -68,7 +68,7 @@ export default function HeaderMenu() {
             className="hover:text-foreground cursor-pointer"
             onClick={() => {
               setMenuOpen(false);
-              window.location.href = "/#about-us";
+              redirect("/#about-us");
             }}
           >
             {lang.header.aboutUs}
@@ -78,7 +78,7 @@ export default function HeaderMenu() {
             className="hover:text-foreground cursor-pointer"
             onClick={() => {
               setMenuOpen(false);
-              window.location.href = "/#faqs";
+              redirect("/#faqs");
             }}
           >
             {lang.header.faqs}
@@ -91,7 +91,7 @@ export default function HeaderMenu() {
             <button
               onClick={() => {
                 setMenuOpen(false);
-                window.location.href = "/#contact-us";
+                redirect("/#contact-us");
               }}
               className="md:hidden bg-linear-to-b from-red-secondary to-red-primary text-white py-2 px-4 rounded-lg whitespace-nowrap cursor-pointer"
             >
