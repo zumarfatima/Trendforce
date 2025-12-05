@@ -71,10 +71,10 @@ Message: ${message}
                 `,
                 html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
-            <h2 style="color: #d32f2f;">Thank you for contacting us!</h2>
+            <h2 style="color: #d32f2f;">Thank you for contacting us</h2>
             <hr style="margin: 20px 0;" />
-            <p><strong>Name:</strong>Hi ${name},</p>
-            <p>We Thank you for reaching out to us. We’ve received your message and will get back to you as soon as possible.</p>
+            <p><strong>Hi</strong> ${name},</p>
+            <p>Thank you for reaching out to us. We’ve received your message and will get back to you as soon as possible.</p>
             <p><strong>Best regards,</strong></p>
             <p>TrendForce Consulting Team</p>
             </div>
