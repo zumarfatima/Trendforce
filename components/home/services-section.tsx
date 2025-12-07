@@ -4,9 +4,6 @@ import MainHeading from "../common/main-heading";
 import MainCard from "../common/main-card";
 import { useTranslation } from "@/context/translation-context";
 import { ServiceCard, ServicesSectionProps } from "@/types";
-// import { MainHeadingProps } from "@/types";
-// import { ServiceCard, ServicesSectionProps } from "@/types";
-
 const ServicesSection = () => {
   const { lang } = useTranslation() as { lang: ServicesSectionProps };
 
