@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="flex flex-col-reverse lg:flex-row items-center justify-between w-full py-10  scroll-mt-10  md:py-20 mb-10 mt-13 px-3 rounded-lg bg-gray-50"
+      className="flex flex-col-reverse lg:flex-row items-center justify-between w-full py-10  scroll-mt-10  md:py-20 mb-10 mt-13 px-3 rounded-lg bg-[radial-gradient(circle_at_center,#fde8e8,white)]"
     >
       {/* LEFT CONTENT */}
       <div className="gap-7">
