@@ -58,13 +58,13 @@ export default function LanguageSelector({
             src={
               language === "de" ? "/assets/de-flag.png" : "/assets/uk-flag.png"
             }
-            alt={language === "de" ? "German" : "English"}
+            alt={language === "de" ? "Deutsch" : "English"}
             width={40}
             height={40}
             className="rounded-full h-6 w-6"
           />
           <span className="font-semibold text-gray-800 text-[16px] -mt-1">
-            {language === "de" ? "German" : "English"}
+            {language === "de" ? "Deutsch" : "English"}
           </span>
         </p>
         <ChevronDown className="w-7 h-7 text-gray-700 " />
@@ -104,7 +104,7 @@ export default function LanguageSelector({
               height={20}
               className="rounded-full h-6 w-6"
             />
-            <span>German</span>
+            <span>Deutsch</span>
           </button>
         </div>
       )}

@@ -10,12 +10,12 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="flex flex-col-reverse md:flex-row justify-between w-full py-10  scroll-mt-10  md:my-20 my-10"
+      className="flex flex-col-reverse lg:flex-row items-center justify-between w-full py-10  scroll-mt-10  md:py-20 mb-10 mt-13 px-3 rounded-lg bg-gray-50"
     >
       {/* LEFT CONTENT */}
       <div className="gap-7">
         <div className="gap-4">
-          <h1 className="text-4xl lg:text-[86px] font-bold  mb-5">
+          <h1 className="text-4xl lg:text-6xl xl:text-[86px] font-bold  mb-5">
             <span className="text-black">
               {lang.heroSection.pioneeringTheFuture}{" "}
             </span>
