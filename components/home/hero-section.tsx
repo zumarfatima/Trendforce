@@ -15,11 +15,12 @@ const HeroSection = () => {
       {/* LEFT CONTENT */}
       <div className="gap-7">
         <div className="gap-4">
-          <h1 className="text-4xl md:text-6xl lg:text-[86px] font-bold flex flex-wrap mb-5">
+          <h1 className="text-4xl lg:text-[86px] font-bold  mb-5">
             <span className="text-black">
               {lang.heroSection.pioneeringTheFuture}{" "}
             </span>
             <span className="bg-linear-to-br from-red-secondary to-red-primary bg-clip-text text-transparent border-b-4 border-red-primary">
+              {" "}
               {lang.heroSection.business}
             </span>
           </h1>
@@ -46,7 +47,7 @@ const HeroSection = () => {
       </div>
 
       {/* RIGHT IMAGE */}
-      <div className="w-full flex justify-end">
+      <div className="w-full   ">
         <Image
           src="/assets/home-images/home-banner.svg"
           alt="hero section details"
