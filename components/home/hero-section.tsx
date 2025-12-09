@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="flex flex-col-reverse lg:flex-row items-center justify-between w-full py-10  scroll-mt-10  md:py-20 mb-10 mt-13 px-3 rounded-lg bg-[radial-gradient(circle_at_center,#fde8e8,white)]"
+      className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between w-full py-10  scroll-mt-10  md:py-20 mb-10 mt-13 px-5 md:px-15 rounded-lg "
     >
       {/* LEFT CONTENT */}
       <div className="gap-7">
@@ -47,7 +47,7 @@ const HeroSection = () => {
       </div>
 
       {/* RIGHT IMAGE */}
-      <div className="w-full   ">
+      <div className="w-full flex items-center justify-center  ">
         <Image
           src="/assets/home-images/home-banner.svg"
           alt="hero section details"

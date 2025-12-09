@@ -9,8 +9,10 @@ import ContactUs from "./contact-us";
 const HomePage = () => {
   return (
     <>
-      <div className="container mx-auto px-5 md:px-15">
+      <div className="bg-[#FCECEC]">
         <HeroSection />
+      </div>
+      <div className="container mx-auto px-5 md:px-15">
         <ServicesSection />
         <AboutUs />
       </div>
