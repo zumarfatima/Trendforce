@@ -26,9 +26,9 @@ const Footer = () => {
   const t: FooterData = lang.footer;
 
   return (
-    <section className="sm:px-20 pt-15 pb-2 -mb-6 bg-black">
-      <div className="container px-5 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] py-10 gap-10">
+    <section className=" sm:px-15  pt-15 pb-2 -mb-6 bg-black">
+      <div className="container mx-auto px-5 lg:px-15">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-10 ">
           <div className="flex flex-col gap-4 text-start  lg:items-start mb-4 lg:mb-0">
             <Link href="/">
               <Image
@@ -38,19 +38,19 @@ const Footer = () => {
                 height={200}
               />
             </Link>
-            <p className="text-sm sm:text-base lg:pe-30 text-white">
+            <p className="text-sm max-w-[400px] sm:text-base  text-white">
               {t.description}
             </p>
           </div>
           {/* Right lists */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 space-y-3 text-white">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 space-y-3 text-white">
             {t.columns.map((col: FooterColumn, index: number) => {
               return (
                 <div key={index} className="text-start">
                   <h3 className="text-[#e41c34] font-semibold mb-4">
                     {col.title}
                   </h3>
-                  <ul className="flex flex-col gap-2">
+                  <ul className="flex flex-col gap-2 max-w-[200px]">
                     {col.links.map((link: FooterLink, idx: number) => (
                       <li key={idx} className="flex justify-start gap-2">
                         {link.image && (
@@ -75,7 +75,7 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <hr className="border-spacing-0.5 border-gray-50 p-0 m-0" />
+        <hr className="border-spacing-0.5 border-gray-50 p-0 mt-1" />
         <div className="mt-4 flex flex-col md:flex-row items-center justify-between gap-4 ">
           <p className="text-white text-center md:text-start text-[16px] sm:text-base">
             {t.copyright}

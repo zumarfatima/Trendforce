@@ -1,45 +1,60 @@
 "use client";
 
 import { useTranslation } from "@/context/translation-context";
-import React, { useState } from "react";
-
 const LegalNoticePage = () => {
-  // Simple language state: "en" or "de"
-
   const { lang } = useTranslation();
 
   return (
-    <div className="container mx-auto p-8 space-y-10 mt-15">
-      <h1 className="text-6xl font-extrabold mb-6">{lang.legalNotice.title}</h1>
+    <div className="w-full container mx-auto px-5 md:px-15  py-15 space-y-5 md:space-y-8">
+      {/* Title */}
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
+        {lang.legalNotice.title}
+      </h1>
 
-      <section className="mb-6">
-        <h2 className="text-4xl font-bold mb-2">
+      {/* Company Section */}
+      <section className="space-y-2">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
           {lang.legalNotice.company.name}
         </h2>
-        <p className="text-xl">{lang.legalNotice.company.registration}</p>
+        <p className="text-base sm:text-lg md:text-xl">
+          {lang.legalNotice.company.registration}
+        </p>
       </section>
 
-      <section className="mb-6">
-        <h3 className="text-2xl font-bold mb-2">
+      {/* Address Section */}
+      <section className="space-y-1">
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">
           {lang.legalNotice.address.title}
         </h3>
-        <p className="text-xl">{lang.legalNotice.address.line1}</p>
-        <p className="text-xl">{lang.legalNotice.address.line2}</p>
+        <p className="text-base sm:text-lg md:text-xl">
+          {lang.legalNotice.address.line1}
+        </p>
+        <p className="text-base sm:text-lg md:text-xl">
+          {lang.legalNotice.address.line2}
+        </p>
       </section>
 
-      <section className="mb-6">
-        <h3 className="text-2xl font-bold mb-2">
-          {lang.legalNotice.vat.title}{" "}
+      {/* VAT Section */}
+      <section className="space-y-1">
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">
+          {lang.legalNotice.vat.title}
         </h3>
-        <h3 className=" text-xl">{lang.legalNotice.vat.number}</h3>
+        <p className="text-base sm:text-lg md:text-xl">
+          {lang.legalNotice.vat.number}
+        </p>
       </section>
 
-      <section className="mb-6">
-        <h3 className="text-2xl font-bold mb-2">
+      {/* Contact Section */}
+      <section className="space-y-1">
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">
           {lang.legalNotice.contact.title}
         </h3>
-        <p className="text-xl">{lang.legalNotice.contact.phone}</p>
-        <p className="text-xl">{lang.legalNotice.contact.email}</p>
+        <p className="text-base sm:text-lg md:text-xl">
+          {lang.legalNotice.contact.phone}
+        </p>
+        <p className="text-base sm:text-lg md:text-xl">
+          {lang.legalNotice.contact.email}
+        </p>
       </section>
     </div>
   );

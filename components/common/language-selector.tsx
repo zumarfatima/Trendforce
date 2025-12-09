@@ -53,7 +53,7 @@ export default function LanguageSelector({
           variant === "compact" ? "px-2 py-1 bg-white" : "px-4 "
         } w-full`}
       >
-        <p className="flex items-center gap-1 justify-center px-2">
+        <p className="flex items-center gap-1 justify-center ">
           <Image
             src={
               language === "de" ? "/assets/de-flag.png" : "/assets/uk-flag.png"
@@ -63,7 +63,7 @@ export default function LanguageSelector({
             height={40}
             className="rounded-full h-6 w-6"
           />
-          <span className="font-semibold text-gray-800 text-[16px] -mt-1">
+          <span className="font-semibold text-gray-800 text-[14px] md:text-[16px] -mt-1">
             {language === "de" ? "Deutsch" : "English"}
           </span>
         </p>

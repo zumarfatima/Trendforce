@@ -82,7 +82,7 @@ export default function NavBarIndex() {
           </a>
         </div>
 
-        <ul className="hidden lg:flex justify-center items-center text-[16px] font-medium text-white w-auto gap-5 md:gap-2 xl:gap-20 ">
+        <ul className="hidden lg:flex justify-center items-center text-[16px] font-medium text-white w-auto gap-5 md:gap-2 lg:gap-3 xl:gap-18 ">
           {links.map((link) => (
             <li
               key={link.href}
