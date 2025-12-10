@@ -19,8 +19,8 @@ export async function POST(request: Request) {
     port: 465,
     secure: true, // true for port 465
     auth: {
-      user: process.env.EMAIL_USER, // your GoDaddy email
-      pass: process.env.EMAIL_PASS  // app-specific password or email password
+      user: process.env.ADMIN_EMAIL_USER, // your GoDaddy email
+      pass: process.env.ADMIN_EMAIL_PASS  // app-specific password or email password
     }
   });
 
@@ -28,7 +28,7 @@ export async function POST(request: Request) {
   const adminMailOptions = {
     from: `"Trendforce Consulting Contact Form" <no-reply@trendforceconsulting.com>`,
     replyTo: email,
-    to: process.env.EMAIL_USER,
+    to: process.env.ADMIN_EMAIL_USER,
     subject: `New Contact Form Submission: ${subject}`,
     text: `
 You have received a new message:
