@@ -10,7 +10,7 @@ const AboutUs = () => {
   return (
     <div id="about-us" className=" my-10 scroll-mt-10">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
-        <div className="md:w-[50%] mt-5 lg:mt-0">
+        <div className="lg:w-[50%] mt-5 lg:mt-0">
           <MainHeading
             button={lang.aboutUsSection.button}
             center={false}
@@ -31,7 +31,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-5 my-15 md:mx-20">
+      <div className="flex flex-col md:flex-row gap-5 my-15 lg:mx-20">
         {lang.aboutUsCards.map((card: any, idx: number) => (
           <AboutUSCard
             key={idx}
