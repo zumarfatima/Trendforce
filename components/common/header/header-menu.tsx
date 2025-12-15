@@ -12,7 +12,7 @@ export default function HeaderMenu() {
   const { lang } = useTranslation();
   return (
     <>
-      <div className="flex items-center gap-3 relative">
+      <div className="flex items-center gap-3 relative ">
         <div className="hidden md:flex items-center gap-2">
           <LanguageSelector variant="compact" />
           <button

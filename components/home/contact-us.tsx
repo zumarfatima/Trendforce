@@ -25,6 +25,7 @@ const ContactUs = () => {
     formState: { errors, isSubmitting },
     clearErrors,
   } = useForm<FormValues>();
+  console.log("error>>>>>>>>>", errors);
 
   // API function to submit form
   const submitContactForm = async (formData: FormValues) => {
@@ -129,7 +130,7 @@ const ContactUs = () => {
                 <p className="">
                   {errors.email && (
                     <span className="text-red-500 text-sm">
-                      {t.errors.emailRequired}
+                      {t.errors.emailInvalid}
                     </span>
                   )}
                 </p>
