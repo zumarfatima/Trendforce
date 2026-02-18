@@ -16,9 +16,9 @@ const LegalNoticePage = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
           {lang.legalNotice.company.name}
         </h2>
-        <p className="text-base sm:text-lg md:text-xl">
+        {/* <p className="text-base sm:text-lg md:text-xl">
           {lang.legalNotice.company.registration}
-        </p>
+        </p> */}
       </section>
 
       {/* Address Section */}
