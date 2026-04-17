@@ -3,89 +3,94 @@
     "home": "Startseite",
     "services": "Dienstleistungen",
     "aboutUs": "Über uns",
-    "faqs": "Häufige Fragen",
-    "getFreeConsultation": "Kostenlose Beratung erhalten"
+    "faqs": "FAQs",
+    "getFreeConsultation": "Kostenlose Beratung anfordern"
   },
   "heroSection": {
-    "pioneeringTheFuture": "Die Zukunft Gestalten von",
-    "business": "Geschäft",
-    "empoweringJourney": "Stärken sie ihre reise zum globalen finanziellen erfolg durch maßgeschneiderte und personalisierte finanzberatung für jeden kunden",
+    "pioneeringTheFuture": "Die Zukunft der",
+    "business": "Geschäftswelt gestalten",
+    "empoweringJourney": "Wir unterstützen Sie auf Ihrem Weg zum globalen finanziellen Erfolg – mit individuell zugeschnittener und persönlicher Finanzberatung.",
     "exploreServices": "Unsere Dienstleistungen entdecken",
-    "contactUs": "Kontaktieren Sie uns"
+    "contactUs": "Kontakt aufnehmen"
   },
   "servicesSection": {
-    "heading1": "Was Wir ",
-    "heading2": "Anbieten",
-    "subheading": "Wir bieten innovative Lösungen in mehreren Bereichen, um Unternehmen erfolgreich zu machen.",
+    "heading1": "Was wir ",
+    "heading2": "anbieten",
+    "subheading": "Wir bieten innovative Lösungen in verschiedenen Bereichen, um Unternehmen dabei zu unterstützen, in einem sich ständig wandelnden Umfeld erfolgreich zu sein.",
     "servicesButton": "Dienstleistungen"
   },
-
   "mainCards": [
     {
       "src": "/assets/home-images/Consultation.svg",
       "heading": "Beratung",
-      "subheading": "Strategische Unternehmensberatung, um Ihre Organisation bei der Bewältigung komplexer Herausforderungen und der Erzielung nachhaltigen Wachstums zu unterstützen."
+      "subheading": "Strategische Unternehmensberatung, die Ihre Organisation dabei unterstützt, komplexe Herausforderungen zu meistern und nachhaltiges Wachstum zu erzielen."
     },
     {
       "src": "/assets/home-images/Commodity.svg",
-      "heading": "Rohstoffgeschäfte",
-      "subheading": "Fachkundige Beratung und Unterstützung bei Rohstofftransaktionen, um optimalen Wert und Risikomanagement zu gewährleisten."
+      "heading": "Rohstoffhandel",
+      "subheading": "Fachkundige Beratung und Abwicklung von Rohstofftransaktionen mit Fokus auf optimalen Wert und effektives Risikomanagement."
     },
     {
       "src": "/assets/home-images/Digitalization.svg",
       "heading": "Digitalisierung",
-      "subheading": "Transformieren Sie Ihr Unternehmen mit modernsten digitalen Lösungen, die Effizienz steigern und neue Chancen schaffen."
+      "subheading": "Transformieren Sie Ihr Unternehmen mit modernen digitalen Lösungen, die Effizienz steigern und neue Geschäftsmöglichkeiten schaffen."
     },
     {
       "src": "/assets/home-images/Tokenization.svg",
       "heading": "Tokenisierung",
-      "subheading": "Nutzen Sie Blockchain-Technologie, um Vermögenswerte zu tokenisieren und neuen Wert und Liquidität in traditionellen Märkten zu schaffen."
+      "subheading": "Nutzen Sie Blockchain-Technologie zur Tokenisierung von Vermögenswerten und erschließen Sie neue Werte sowie Liquidität in traditionellen Märkten."
     },
     {
       "src": "/assets/home-images/Quantum.svg",
       "heading": "Quantencomputing",
-      "subheading": "Erforschen Sie Quantencomputing, um komplexe Probleme jenseits traditioneller Grenzen zu lösen."
+      "subheading": "Nutzen Sie die Möglichkeiten des Quantencomputings, um komplexe Probleme über die Grenzen klassischer Systeme hinaus zu lösen."
     },
     {
       "src": "/assets/home-images/Sustainable.svg",
       "heading": "Nachhaltige Lösungen",
-      "subheading": "Entwickeln und implementieren Sie nachhaltige Geschäftsstrategien, die Wachstum und positive Auswirkungen fördern."
+      "subheading": "Entwickeln und implementieren Sie nachhaltige Geschäftsstrategien, die Wachstum fördern und einen positiven Einfluss schaffen."
     }
   ],
   "aboutUsSection": {
     "button": "Über uns",
     "heading1": "WER ",
     "heading2": "WIR SIND",
-    "subheading": "Trendforce Consulting LLC ist ein zukunftsorientiertes Unternehmen, das traditionelle Geschäftsmodelle mit neuen Technologien verbindet. Wir sind spezialisiert auf Beratung, Rohstoffmärkte, digitale Transformation, Blockchain und Quantencomputing — und bieten maßgeschneiderte Lösungen, die Unternehmen helfen, in einer sich schnell verändernden Welt erfolgreich zu sein. Unser Expertenteam verfügt über Marktkenntnisse, digitale Transformationsstrategien und strategische Planung, damit Ihr Unternehmen nicht nur mithalten, sondern im Wandel wachsen kann."
+    "subheading": "Trendforce Consulting LLC ist ein zukunftsorientiertes Unternehmen, das traditionelles Geschäft mit modernen Technologien verbindet. Wir sind spezialisiert auf Beratung, Rohstoffmärkte, digitale Transformation, Blockchain und Quantencomputing – und bieten maßgeschneiderte Lösungen, die Unternehmen helfen, in einer sich schnell verändernden Welt erfolgreich zu sein. Unser Expertenteam vereint umfassende Marktkenntnisse, digitale Expertise und strategische Planung, damit Ihr Unternehmen nicht nur Schritt hält, sondern nachhaltig wächst."
   },
   "aboutUsCards": [
     {
       "src": "/assets/about-us/mission.svg",
       "heading": "Unsere Mission",
-      "subheading": "Die Lücke zwischen Daten und Entscheidungsfindung zu schließen und Organisationen zu wirkungsvollem Wachstum und Zukunftsfähigkeit zu führen."
+      "subheading": "Die Lücke zwischen Daten und Entscheidungsfindung zu schließen und Organisationen zu nachhaltigem Wachstum sowie Zukunftsfähigkeit zu führen."
     },
     {
       "src": "/assets/about-us/vision.svg",
       "heading": "Unsere Vision",
-      "subheading": "Eine globale Führungsrolle in trendbasierter Beratung einzunehmen und Unternehmen zu befähigen, klügere, schnellere und zukunftsorientierte Entscheidungen zu treffen."
+      "subheading": "Als globaler Marktführer in der trendbasierten Beratung Unternehmen zu befähigen, fundierte, schnelle und zukunftsorientierte Entscheidungen zu treffen."
     }
   ],
+  "wallet-section": {
+    "part1": "Sichern Sie Ihre Transaktionen physisch mit",
+    "part2": " Omega Krypto-Wallets",
+    "part3": "Bewahren Sie Ihre privaten Schlüssel offline auf und bestätigen Sie jede Transaktion über Ihr sicheres Hardware-Gerät.",
+    "Learn More": "Mehr erfahren"
+  },
   "advantageSection": {
     "badge": "Warum TrendForce?",
     "title": "DER TRENDFORCE",
-    "highlight": "VORTEIL!",
+    "highlight": "VORTEIL",
     "cards": [
       {
-        "title": "Insightsbasierter Ansatz",
-        "description": "Jede Empfehlung basiert auf gründlichen Daten, Forschung und Modellierung."
+        "title": "Datenbasierter Ansatz",
+        "description": "Jede Empfehlung basiert auf fundierten Daten, Analysen und Modellierungen."
       },
       {
         "title": "Maßgeschneiderte Strategien",
-        "description": "Keine Lösungen von der Stange – wir entwickeln Programme, die auf Ihre Ziele und Ambitionen abgestimmt sind."
+        "description": "Keine Standardlösungen. Wir entwickeln Konzepte, die exakt auf Ihre Ziele und Rahmenbedingungen abgestimmt sind."
       },
       {
-        "title": "Bewährte Ergebnisse",
-        "description": "JMessbare Wirkung mit klaren KPIs – von Wachstum über Kosteneinsparung bis hin zu Optimierung."
+        "title": "Nachweisbare Ergebnisse",
+        "description": "Messbare Resultate anhand klar definierter KPIs – von beschleunigtem Wachstum bis hin zur Kostenoptimierung."
       }
     ]
   },
@@ -93,27 +98,27 @@
     "button": "FAQs",
     "title1": "Häufig gestellte ",
     "title2": "Fragen",
-    "desc": "Finden Sie Antworten auf häufig gestellte Fragen zu unseren Dienstleistungen und unserem Ansatz.",
+    "desc": "Hier finden Sie Antworten auf häufig gestellte Fragen zu unseren Dienstleistungen und unserem Ansatz.",
     "items": [
       {
-        "question": "Mit welchen Branchen arbeitet TrendForce Consulting?",
-        "answer": "Wir arbeiten mit einer Vielzahl von Branchen zusammen, darunter Technologie, Finanzwesen, Gesundheitswesen, Fertigung, Einzelhandel und Nachhaltigkeit. Unsere Strategien werden individuell auf die Bedürfnisse Ihres Unternehmens zugeschnitten."
+        "question": "Mit welchen Branchen arbeitet TrendForce Consulting zusammen?",
+        "answer": "Wir arbeiten branchenübergreifend mit Unternehmen aus Bereichen wie Technologie, Finanzwesen, Gesundheitswesen, Fertigung, Einzelhandel und Nachhaltigkeit. Unsere Strategien werden individuell auf die Anforderungen Ihres Unternehmens zugeschnitten."
       },
       {
-        "question": "Welche Arten von Beratungsleistungen bieten Sie an?",
-        "answer": "Wir bieten ein breites Spektrum an Dienstleistungen an, darunter Unternehmensstrategie, Marktanalysen, KI-basierte Lösungen, Finanzanalysen, Risikobewertung, digitale Transformation und Leistungsoptimierung."
+        "question": "Welche Beratungsleistungen bieten Sie an?",
+        "answer": "Unser Leistungsspektrum umfasst unter anderem Unternehmensstrategie, Marktanalysen, KI-basierte Lösungen, Finanzanalysen, Risikobewertung, digitale Transformation und Performance-Optimierung."
       },
       {
-        "question": "Kann TrendForce Consulting maßgeschneiderte Strategien für mein Unternehmen entwickeln?",
-        "answer": "Ja, absolut. Unser Team entwickelt individuell angepasste Strategien, die auf die Ziele, Herausforderungen und das Wachstumspotenzial Ihres Unternehmens abgestimmt sind."
+        "question": "Kann TrendForce Consulting individuelle Strategien für mein Unternehmen entwickeln?",
+        "answer": "Ja. Wir entwickeln maßgeschneiderte Strategien, die exakt auf Ihre Ziele, Herausforderungen und Ihr Wachstumspotenzial abgestimmt sind."
       },
       {
         "question": "Bieten Sie auch nach Projektabschluss Unterstützung an?",
-        "answer": "Ja, wir bieten kontinuierliche Unterstützung, Leistungsüberwachung und strategische Optimierung, selbst nach Abschluss des Projekts – für nachhaltigen Erfolg."
+        "answer": "Ja, wir bieten auch nach Abschluss eines Projekts kontinuierliche Unterstützung, Performance-Monitoring und strategische Weiterentwicklung, um nachhaltigen Erfolg sicherzustellen."
       },
       {
-        "question": "Wie stellen Sie Vertraulichkeit und Datensicherheit sicher?",
-        "answer": "Wir setzen strenge Sicherheitsrichtlinien um, verwenden fortschrittliche Verschlüsselungstechnologien und halten branchenübliche Vertraulichkeitsstandards ein, um alle Kundendaten zu schützen."
+        "question": "Wie gewährleisten Sie Vertraulichkeit und Datensicherheit?",
+        "answer": "Wir setzen strenge Datenschutzrichtlinien um, nutzen moderne Verschlüsselungstechnologien und halten uns an etablierte Branchenstandards, um sämtliche Kundendaten zu schützen."
       }
     ]
   },
@@ -121,27 +126,27 @@
     "button": "Jetzt starten",
     "heading1": "Bereit, Ihr Unternehmen zu ",
     "heading2": "transformieren?",
-    "subheading": "Arbeiten Sie mit TrendForce Consulting zusammen, um die Zukunft Ihres Unternehmens mit Vertrauen und Innovation zu gestalten.",
+    "subheading": "Arbeiten Sie mit TrendForce Consulting zusammen, um die Zukunft Ihres Unternehmens mit Zuversicht und Innovationskraft zu gestalten.",
     "cta": "Beratungstermin vereinbaren"
   },
   "contactUsSection": {
-    "button": "Kontaktieren Sie uns",
-    "heading1": "Treten Sie in ",
-    "heading2": "Kontakt",
+    "button": "Kontakt",
+    "heading1": "Nehmen Sie ",
+    "heading2": "Kontakt auf",
     "subheading": "Haben Sie Fragen oder Interesse an unseren Dienstleistungen? Kontaktieren Sie uns.",
     "form": {
       "name": "Name",
-      "email": "Email",
+      "email": "E-Mail",
       "phone": "Telefonnummer",
       "subject": "Betreff",
       "message": "Nachricht",
       "submit": "Nachricht senden",
-      "submitting": "Senden..."
+      "submitting": "Wird gesendet..."
     },
     "errors": {
-      "nameRequired": "Bitte geben Sie Ihren Name ein.",
-      "emailRequired": "Bitte geben Sie Ihre Email ein.",
-      "emailInvalid": "Bitte geben Sie eine gültige Email ein.",
+      "nameRequired": "Bitte geben Sie Ihren Namen ein.",
+      "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
       "phoneRequired": "Bitte geben Sie Ihre Telefonnummer ein.",
       "phoneMinLength": "Bitte geben Sie mindestens 10 Ziffern ein.",
       "subjectRequired": "Bitte geben Sie einen Betreff ein.",
@@ -150,15 +155,14 @@
       "successError": "Ihre Nachricht wurde erfolgreich gesendet."
     },
     "placeholders": {
-      "name": "Geben Sie Ihren Name ein",
-      "email": "Geben Sie Ihre Email ein",
-      "phone": "Geben Sie Ihre Telefonnummer ein",
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail-Adresse",
+      "phone": "Ihre Telefonnummer",
       "subject": "Betreff eingeben",
-      "message": "Schreiben Sie hier Ihre Nachricht..."
+      "message": "Ihre Nachricht..."
     },
-
     "contactDetails": {
-      "title": "Kontakt informationen:",
+      "title": "Kontaktinformationen:",
       "address": {
         "label": "Adresse",
         "line1": "Westgate Center,",
@@ -167,7 +171,7 @@
         "line4": "USA"
       },
       "email": {
-        "label": "Email-Adresse",
+        "label": "E-Mail-Adresse",
         "value": "info@trendforceconsulting.com"
       },
       "phone": {
@@ -181,10 +185,10 @@
     }
   },
   "footer": {
-    "description": "Pionierlösungen in Beratung, Rohstoffgeschäften, Digitalisierung, Tokenisierung und Quantencomputing. Wir helfen Unternehmen, die Zukunft mit Vertrauen zu gestalten.",
+    "description": "Innovative Lösungen in den Bereichen Beratung, Rohstoffhandel, Digitalisierung, Tokenisierung und Quantencomputing. Wir unterstützen Unternehmen dabei, die Zukunft mit Zuversicht zu gestalten.",
     "columns": [
       {
-        "title": "Schnellzugriffe",
+        "title": "Schnellzugriff",
         "links": [
           { "label": "Startseite", "href": "/#home" },
           { "label": "Dienstleistungen", "href": "/#services" },
@@ -196,8 +200,11 @@
         "links": [
           { "label": "FAQs", "href": "/#faqs" },
           { "label": "Kontakt", "href": "/#contact-us" },
-          { "label": "Datenschutzrichtlinie", "href": "/privacy-policy" },
-          { "label": "Nutzungsbedingungen", "href": "/terms-and-conditions" },
+          { "label": "Datenschutzerklärung", "href": "/privacy-policy" },
+          {
+            "label": "Allgemeine Geschäftsbedingungen",
+            "href": "/terms-and-conditions"
+          },
           { "label": "Impressum", "href": "/impressum" }
         ]
       },
@@ -216,147 +223,146 @@
           },
           {
             "image": "/assets/home-images/location.svg",
-            "label": "Westgate Center, 3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198, USA",
+            "label": "Westgate Center, 3665 Bonita Beach Road Suite 1-3, Bonita Springs, FL 34134-4198, USA",
             "href": "https://maps.app.goo.gl/rPFHq42G4EThFFXe7"
           }
         ]
       }
     ],
-    "copyright": "Copyright © 2022 TrendForce Consulting.",
-    "copyright2": "Alle Rechte vorbehalten | <a style='color:#BE1E2D; text-decoration: underline;' href='/terms-and-conditions'>Nutzungsbedingungen</a> | <a style='color:#BE1E2D; text-decoration: underline;' href='/privacy-policy'>Datenschutzrichtlinie</a>"
+    "copyright": "Copyright © 2022 TrendForce Consulting",
+    "copyright2": "Alle Rechte vorbehalten | <a style='color:#BE1E2D; text-decoration: underline;' href='/terms-and-conditions'>Allgemeine Geschäftsbedingungen</a> | <a style='color:#BE1E2D; text-decoration: underline;' href='/privacy-policy'>Datenschutzerklärung</a>"
   },
   "privacy": {
     "privacy": "Datenschutz ",
-    "policy": "Richtlinie",
+    "policy": "richtlinie",
     "desc": "Unser Engagement für Transparenz und den Schutz Ihrer Daten.",
     "date2": "Zuletzt aktualisiert: ",
     "date": "18. September 2025",
-    "table": "Seitenübersicht",
+    "table": "Inhaltsverzeichnis",
     "sections": [
       {
-        "title": "1. Informationen, die wir sammeln",
-        "desc": "TrendForce sammelt Informationen, um unseren Nutzern bessere Dienste bereitzustellen. Die Arten von Informationen, die wir sammeln, umfassen:",
+        "title": "1. Erhebung von Informationen",
+        "desc": "TrendForce erhebt Informationen, um unseren Nutzern bessere Dienstleistungen bereitzustellen. Zu den erhobenen Daten gehören:",
         "points": [
-          "Persönliche Informationen: Name, E-Mail-Adresse, Telefonnummer und andere Kontaktdaten, die Sie angeben, wenn Sie uns kontaktieren oder unsere Dienste nutzen.",
-          "Nutzungsdaten: Informationen darüber, wie Sie unsere Website nutzen, einschließlich Ihrer Surfgewohnheiten, besuchten Seiten und genutzten Funktionen.",
-          "Technische Daten: IP-Adresse, Browsertyp und -version, Zeitzoneneinstellungen, Betriebssystem und Plattform."
+          "Personenbezogene Daten: Name, E-Mail-Adresse, Telefonnummer sowie weitere Kontaktdaten, die Sie uns im Rahmen der Nutzung unserer Dienstleistungen oder bei Kontaktaufnahme zur Verfügung stellen.",
+          "Nutzungsdaten: Informationen darüber, wie Sie unsere Website verwenden, einschließlich Ihres Nutzungsverhaltens, besuchter Seiten und genutzter Funktionen.",
+          "Technische Daten: IP-Adresse, Browsertyp und -version, Zeitzoneneinstellungen, Betriebssystem sowie Plattform."
         ]
       },
       {
-        "title": "2. Wie wir Ihre Informationen verwenden",
-        "desc": "Wir verwenden die gesammelten Informationen für verschiedene Zwecke, einschließlich:",
+        "title": "2. Verwendung Ihrer Daten",
+        "desc": "Wir verwenden die erhobenen Informationen für verschiedene Zwecke, insbesondere:",
         "points": [
-          "Bereitstellung, Wartung und Verbesserung unserer Dienste.",
-          "Beantwortung Ihrer Anfragen und Erfüllung Ihrer Wünsche.",
-          "Versand administrativer Informationen, wie Aktualisierungen unserer Bedingungen und Richtlinien.",
-          "Personalisierung Ihrer Erfahrung auf unserer Website.",
-          "Analyse von Nutzungsmustern zur Verbesserung unserer Website und Dienste.",
-          "Schutz unserer Rechte, Privatsphäre, Sicherheit oder Eigentum."
+          "Zur Bereitstellung, Wartung und Verbesserung unserer Dienstleistungen.",
+          "Zur Bearbeitung Ihrer Anfragen und zur Erfüllung Ihrer Anliegen.",
+          "Zur Übermittlung administrativer Informationen, einschließlich Aktualisierungen unserer Bedingungen und Richtlinien.",
+          "Zur Personalisierung Ihrer Nutzererfahrung auf unserer Website.",
+          "Zur Analyse des Nutzungsverhaltens, um unsere Website und Dienstleistungen zu optimieren.",
+          "Zum Schutz unserer Rechte, unserer Privatsphäre, unserer Sicherheit sowie unseres Eigentums."
         ]
       },
       {
         "title": "3. Cookies und ähnliche Technologien",
-        "desc": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um Aktivitäten auf unserer Website zu verfolgen und bestimmte Informationen zu speichern.",
+        "desc": "Wir verwenden Cookies und vergleichbare Technologien, um Aktivitäten auf unserer Website zu analysieren und bestimmte Informationen zu speichern.",
         "points": [
-          "Cookies sind Dateien mit einer kleinen Menge an Daten, die eine anonyme eindeutige Kennung enthalten können.",
-          "Sie können Ihren Browser anweisen, alle Cookies abzulehnen oder anzuzeigen, wenn ein Cookie gesendet wird.",
-          "Wenn Sie keine Cookies akzeptieren, können möglicherweise einige Funktionen unserer Website nicht genutzt werden."
+          "Cookies sind kleine Dateien, die eine anonyme eindeutige Kennung enthalten können.",
+          "Sie können Ihren Browser so einstellen, dass alle Cookies abgelehnt werden oder Sie benachrichtigt werden, sobald Cookies gesetzt werden.",
+          "Wenn Sie Cookies deaktivieren, kann dies die Funktionalität bestimmter Bereiche unserer Website einschränken."
         ]
       },
       {
         "title": "4. Datensicherheit",
-        "desc": "Die Sicherheit Ihrer Daten ist uns wichtig. Wir setzen angemessene technische und organisatorische Maßnahmen ein, um Ihre persönlichen Informationen zu schützen, können jedoch keine absolute Sicherheit garantieren.",
+        "desc": "Die Sicherheit Ihrer Daten ist uns wichtig. Wir setzen angemessene technische und organisatorische Maßnahmen ein, um Ihre personenbezogenen Daten zu schützen. Dennoch kann keine Übertragung über das Internet oder elektronische Speicherung vollständig sicher gewährleistet werden.",
         "points": [
-          "Wir implementieren technische und organisatorische Schutzmaßnahmen gegen Verlust, Änderung, unbefugten Zugriff oder Offenlegung personenbezogener Daten.",
-          "Nur autorisiertes Personal hat Zugriff auf persönliche Daten."
+          "Wir schützen Daten vor Verlust, Manipulation, unbefugtem Zugriff und unbefugter Offenlegung durch geeignete Sicherheitsmaßnahmen.",
+          "Der Zugriff auf personenbezogene Daten ist ausschließlich autorisierten Personen vorbehalten."
         ]
       },
       {
-        "title": "5. Drittanbieter-Dienste",
-        "desc": "Unsere Website kann Links zu Websites Dritter enthalten, die nicht von uns betrieben werden.",
+        "title": "5. Dienste Dritter",
+        "desc": "Unsere Website kann Links zu externen Websites enthalten, die nicht von uns betrieben werden.",
         "points": [
-          "Wenn Sie auf einen Drittanbieter-Link klicken, werden Sie auf deren Website weitergeleitet.",
-          "Wir empfehlen Ihnen dringend, die Datenschutzrichtlinie jeder besuchten Website zu überprüfen.",
-          "Wir übernehmen keine Verantwortung für Inhalte, Datenschutzrichtlinien oder Praktiken von Websites oder Diensten Dritter."
+          "Beim Anklicken eines solchen Links werden Sie auf die jeweilige externe Website weitergeleitet.",
+          "Wir empfehlen Ihnen, die Datenschutzrichtlinien jeder von Ihnen besuchten Website zu prüfen.",
+          "Wir übernehmen keine Verantwortung für Inhalte, Datenschutzpraktiken oder Richtlinien externer Anbieter."
         ]
       },
       {
         "title": "6. Ihre Datenschutzrechte",
-        "desc": "Abhängig von Ihrem Standort können Sie bestimmte Rechte in Bezug auf Ihre persönlichen Daten haben:",
+        "desc": "Abhängig von Ihrem Standort stehen Ihnen möglicherweise bestimmte Rechte in Bezug auf Ihre personenbezogenen Daten zu:",
         "points": [
-          "Das Recht auf Zugriff, Aktualisierung oder Löschung Ihrer persönlichen Daten.",
-          "Das Recht auf Berichtigung, wenn Ihre Informationen ungenau oder unvollständig sind.",
-          "Das Recht, der Verarbeitung Ihrer persönlichen Daten zu widersprechen.",
-          "Das Recht, die Verarbeitung Ihrer persönlichen Daten einzuschränken.",
-          "Das Recht auf Datenübertragbarkeit.",
-          "Das Recht, die Einwilligung jederzeit zu widerrufen."
+          "Recht auf Auskunft über Ihre gespeicherten Daten.",
+          "Recht auf Berichtigung unrichtiger oder unvollständiger Daten.",
+          "Recht auf Widerspruch gegen die Verarbeitung Ihrer Daten.",
+          "Recht auf Einschränkung der Datenverarbeitung.",
+          "Recht auf Datenübertragbarkeit.",
+          "Recht auf Widerruf Ihrer Einwilligung jederzeit."
         ]
       },
       {
         "title": "7. Änderungen dieser Datenschutzrichtlinie",
-        "desc": "Wir können unsere Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite zusammen mit dem aktualisierten 'Zuletzt aktualisiert'-Datum veröffentlicht.",
+        "desc": "Wir behalten uns vor, diese Datenschutzrichtlinie regelmäßig zu aktualisieren. Änderungen werden auf dieser Seite veröffentlicht, einschließlich des aktualisierten Datums.",
         "points": [
-          "Es wird empfohlen, diese Datenschutzrichtlinie regelmäßig auf Änderungen zu überprüfen.",
-          "Änderungen treten in Kraft, sobald sie auf dieser Seite veröffentlicht werden."
+          "Wir empfehlen Ihnen, diese Seite regelmäßig zu überprüfen.",
+          "Änderungen treten mit ihrer Veröffentlichung in Kraft."
         ]
       },
       {
         "title": "8. Kontakt",
-        "desc": "Wenn Sie Fragen oder Bedenken bezüglich dieser Datenschutzerklärung oder Ihrer personenbezogenen Daten haben, kontaktieren Sie uns bitte unter:\n\n TrendForce GmbH",
+        "desc": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie oder zur Verarbeitung Ihrer personenbezogenen Daten haben, kontaktieren Sie uns bitte unter:\n\nTrendForce",
         "email": "E-Mail: info@trendforceconsulting.com",
-        "address": "Adresse:  Westgate Center, 3665 Bonita Beach Road Suite 1-3, Bonita Springs, FL 34134-4198, USA"
+        "address": "Adresse: Westgate Center, 3665 Bonita Beach Road Suite 1-3, Bonita Springs, FL 34134-4198, USA"
       }
     ]
   },
   "terms": {
-    "terms": "Geschäfts & ",
-    "conditions": "Bedingungen",
+    "terms": "Allgemeine ",
+    "conditions": "Geschäftsbedingungen",
     "desc": "Unser Engagement für Transparenz und den Schutz Ihrer Daten.",
     "date2": "Zuletzt aktualisiert: ",
-    "date": "18. Sep. 2025",
+    "date": "18. September 2025",
     "table": "Inhaltsverzeichnis",
     "sections": [
       {
         "title": "1. Einleitung",
-        "desc": "Willkommen bei TrendForce. Diese Allgemeinen Geschäftsbedingungen beschreiben die Regeln und Vorschriften für die Nutzung unserer Website und Dienstleistungen.\n\nDurch den Zugriff auf diese Website gehen wir davon aus, dass Sie diese Allgemeinen Geschäftsbedingungen vollständig akzeptieren. Nutzen Sie unsere Website nicht weiter, wenn Sie nicht alle auf dieser Seite aufgeführten Bedingungen akzeptieren."
+        "desc": "Willkommen bei TrendForce. Diese Allgemeinen Geschäftsbedingungen regeln die Nutzung unserer Website und Dienstleistungen.\n\nDurch den Zugriff auf diese Website erklären Sie sich mit diesen Bedingungen einverstanden. Sollten Sie mit den Bedingungen nicht einverstanden sein, nutzen Sie diese Website bitte nicht weiter."
       },
       {
-        "title": "2. Nutzungslizenz",
-        "desc": "Sofern nicht anders angegeben, besitzen TrendForce und/oder seine Lizenzgeber die geistigen Eigentumsrechte an allen Materialien auf dieser Website. Alle geistigen Eigentumsrechte sind vorbehalten.\n\nSie dürfen Seiten von der Website für Ihren eigenen persönlichen Gebrauch anzeigen und/oder drucken, vorbehaltlich der in diesen Bedingungen festgelegten Einschränkungen.\n\nSie dürfen nicht:",
+        "title": "2. Nutzungsrechte",
+        "desc": "Sofern nicht anders angegeben, liegen alle Rechte an den Inhalten dieser Website bei TrendForce und/oder seinen Lizenzgebern. Sämtliche Rechte sind vorbehalten.\n\nSie dürfen Inhalte dieser Website ausschließlich für den persönlichen Gebrauch einsehen und/oder ausdrucken, vorbehaltlich der in diesen Bedingungen festgelegten Einschränkungen.\n\nUntersagt ist insbesondere:",
         "points": [
-          "Material von dieser Website erneut veröffentlichen",
-          "Material von dieser Website verkaufen, vermieten oder unterlizenzieren",
-          "Material von dieser Website reproduzieren, duplizieren oder kopieren",
-          "Inhalte von dieser Website weiterverbreiten"
+          "Die erneute Veröffentlichung von Inhalten dieser Website",
+          "Der Verkauf, die Vermietung oder Unterlizenzierung von Inhalten",
+          "Die Vervielfältigung, Duplizierung oder Kopie von Inhalten",
+          "Die Weiterverbreitung von Inhalten dieser Website"
         ]
       },
       {
-        "title": "3. Benutzer inhalte",
-        "desc": "In diesen Allgemeinen Geschäftsbedingungen bedeutet 'Benutzerinhalte' Material (einschließlich, aber nicht beschränkt auf Text, Bilder, Audiomaterial, Videomaterial und audiovisuelles Material), das Sie aus irgendeinem Grund auf unserer Website einreichen.\n\nSie gewähren TrendForce eine weltweite, unwiderrufliche, nicht-exklusive, gebührenfreie Lizenz zur Nutzung, Reproduktion, Anpassung, Veröffentlichung, Übersetzung und Verbreitung Ihrer Benutzerinhalte in allen bestehenden oder zukünftigen Medien. Sie gewähren TrendForce auch das Recht, diese Rechte zu unterlizenzieren und eine Klage wegen Verletzung dieser Rechte einzureichen."
+        "title": "3. Nutzerinhalte",
+        "desc": "Im Sinne dieser Bedingungen bezeichnet „Nutzerinhalte“ sämtliche Inhalte (einschließlich, aber nicht beschränkt auf Texte, Bilder, Audio-, Video- und audiovisuelle Inhalte), die Sie über unsere Website bereitstellen.\n\nSie räumen TrendForce eine weltweite, unwiderrufliche, nicht-exklusive und gebührenfreie Lizenz ein, Ihre Nutzerinhalte zu verwenden, zu vervielfältigen, anzupassen, zu veröffentlichen, zu übersetzen und in allen bestehenden oder zukünftigen Medien zu verbreiten. Zudem sind wir berechtigt, diese Rechte zu unterlizenzieren und rechtliche Schritte bei Verstößen einzuleiten."
       },
       {
-        "title": "4. Haftungs beschränkung",
-        "desc": "Soweit gesetzlich zulässig, schließen wir alle Zusicherungen, Garantien und Bedingungen in Bezug auf unsere Website und die Nutzung dieser Website aus.\n\nNichts in diesem Haftungsausschluss wird:",
+        "title": "4. Haftungsbeschränkung",
+        "desc": "Soweit gesetzlich zulässig, schließen wir sämtliche Gewährleistungen und Bedingungen im Zusammenhang mit der Nutzung dieser Website aus.\n\nUnberührt hiervon bleibt:",
         "points": [
-          "Unsere oder Ihre Haftung für Tod oder Körperverletzung einschränken oder ausschließen",
-          "Unsere oder Ihre Haftung für Betrug oder betrügerische Falschdarstellung einschränken oder ausschließen",
-          "Unsere oder Ihre Haftung in irgendeiner Weise einschränken, die nach geltendem Recht nicht zulässig ist",
-          "Unsere oder Ihre Haftung ausschließen, die nach geltendem Recht nicht ausgeschlossen werden kann"
+          "Die Haftung für Tod oder Körperverletzung",
+          "Die Haftung für Betrug oder arglistige Täuschung",
+          "Jegliche Haftung, die nach geltendem Recht nicht ausgeschlossen oder eingeschränkt werden darf"
         ]
       },
       {
         "title": "5. Anwendbares Recht",
-        "desc": "Diese Allgemeinen Geschäftsbedingungen unterliegen den Gesetzen von [Ihr Land] und werden in Übereinstimmung mit diesen ausgelegt, und Sie unterwerfen sich unwiderruflich der ausschließlichen Zuständigkeit der Gerichte an diesem Ort."
+        "desc": "Diese Allgemeinen Geschäftsbedingungen unterliegen dem Recht von [Ihr Land]. Gerichtsstand ist der Sitz des Unternehmens, sofern gesetzlich zulässig."
       },
       {
         "title": "6. Änderungen der Bedingungen",
-        "desc": "TrendForce behält sich das Recht vor, diese Allgemeinen Geschäftsbedingungen jederzeit zu ändern. Wir werden die Benutzer über Änderungen informieren, indem wir die neuen Allgemeinen Geschäftsbedingungen auf dieser Seite veröffentlichen.\n\nIhre fortgesetzte Nutzung der Website nach der Veröffentlichung von Änderungen stellt Ihre Zustimmung zu den neuen Allgemeinen Geschäftsbedingungen dar."
+        "desc": "TrendForce behält sich das Recht vor, diese Allgemeinen Geschäftsbedingungen jederzeit zu ändern. Änderungen werden auf dieser Seite veröffentlicht.\n\nDie fortgesetzte Nutzung der Website nach Veröffentlichung der Änderungen gilt als Zustimmung zu den aktualisierten Bedingungen."
       },
       {
         "title": "7. Kontakt",
-        "desc": "Wenn Sie Fragen oder Bedenken zu dieser Datenschutzerklärung oder Ihren personenbezogenen Daten haben, kontaktieren Sie uns bitte unter:\n\n TrendForce",
+        "desc": "Bei Fragen zu diesen Allgemeinen Geschäftsbedingungen oder zur Nutzung unserer Website kontaktieren Sie uns bitte unter:\n\nTrendForce",
         "email": "E-Mail: info@trendforceconsulting.com",
-        "address": "Adresse:  Westgate Center, 3665 Bonita Beach Road Suite 1-3, Bonita Springs, FL 34134-4198, USA"
+        "address": "Adresse: Westgate Center, 3665 Bonita Beach Road Suite 1-3, Bonita Springs, FL 34134-4198, USA"
       }
     ]
   },
@@ -367,9 +373,9 @@
       "registration": "Eingetragen im Handelsregister des Kantons Zug, CHE-101.808.011"
     },
     "address": {
-      "title": "Addresse:",
+      "title": "Adresse:",
       "line1": "Westgate Center,",
-      "line2": "3665 Bonita Beach Road Suite 1‑3, Bonita Springs, FL 34134‑4198,USA"
+      "line2": "3665 Bonita Beach Road Suite 1-3, Bonita Springs, FL 34134-4198, USA"
     },
     "vat": {
       "title": "Umsatzsteuer-Identifikationsnummer:",
@@ -382,25 +388,25 @@
     }
   },
   "cookieConsent": {
-    "title": "Wir schätzen Ihre Privatsphäre",
-    "description": "TrendForce Consulting verwendet Cookies und ähnliche Technologien, um Ihre Browser-Erfahrung zu verbessern, den Website-Traffic zu analysieren und personalisierte Inhalte bereitzustellen. Sie können Ihre Cookie-Einstellungen verwalten oder alle akzeptieren, um weiterhin eine reibungslose Nutzung zu genießen.",
-    "learnMore": "Erfahren Sie mehr in unserer Datenschutzerklärung",
+    "title": "Wir respektieren Ihre Privatsphäre",
+    "description": "TrendForce Consulting verwendet Cookies und ähnliche Technologien, um Ihr Nutzungserlebnis zu verbessern, den Website-Traffic zu analysieren und personalisierte Inhalte bereitzustellen. Sie können Ihre Cookie-Einstellungen anpassen oder alle Cookies akzeptieren, um die Website uneingeschränkt zu nutzen.",
+    "learnMore": "Mehr erfahren in unserer Datenschutzerklärung",
     "sections": {
       "essential": {
-        "title": "Essenzielle Cookies",
-        "description": "Erforderlich für die grundlegende Funktionalität der Website wie Sicherheit und Barrierefreiheit. Diese können nicht deaktiviert werden."
+        "title": "Notwendige Cookies",
+        "description": "Erforderlich für grundlegende Funktionen der Website, wie Sicherheit und Zugänglichkeit. Diese können nicht deaktiviert werden."
       },
       "analytics": {
-        "title": "Performance & Analyse",
-        "description": "Hilft uns, die Nutzung der Website zu verstehen und die Leistung sowie die Benutzererfahrung zu verbessern."
+        "title": "Analyse & Performance",
+        "description": "Helfen uns, die Nutzung der Website zu verstehen und die Leistung sowie Benutzererfahrung zu verbessern."
       },
       "marketing": {
         "title": "Marketing & Personalisierung",
-        "description": "Wird verwendet, um personalisierte Inhalte bereitzustellen und die Effektivität zu messen."
+        "description": "Werden verwendet, um personalisierte Inhalte bereitzustellen und deren Wirksamkeit zu messen."
       }
     },
     "buttons": {
-      "accept": "Akzeptieren",
+      "accept": "Alle akzeptieren",
       "reject": "Ablehnen"
     }
   }
